@@ -1,0 +1,14 @@
+/* style.css */
+/*           */
+
+/* Using a reset.css */
+@import '_reset.css';
+
+/* settings */
+@import '_settings.css';
+
+@import '_typography.css';
+
+
+
+@import '_layout.css';

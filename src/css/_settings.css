@@ -1,0 +1,24 @@
+/* _settings */
+/*           */
+
+/* Fonts */
+/* Archivo Black */
+/* Archivo Narrow */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow&display=swap');
+
+/* border-box for everything */
+* {
+    box-sizing: border-box;
+}
+
+/* Setting CSS variables and root font size */
+:root {
+    font-size: 16px;
+
+    --black: #4A4A4A;
+    --salmon: #FF6A7C;
+    --tan:  #FFF0E9;
+    --grey: #B2B5BA;
+    --blue: #41CADD;
+    --white: #FEFEFE;
+}
