@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import PlayerEntry from './PlayerEntry';
 
-const mapStateToProps = ({  }) => {
+const mapStateToProps = () => {
     return {
     };
 }
