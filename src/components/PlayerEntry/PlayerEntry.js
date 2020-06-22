@@ -10,6 +10,7 @@ const PlayerEntry = ({ handleSubmit }) => {
     const handleFormSubmit = (e) => {
         e.preventDefault();
         handleSubmit(playerName);
+        setPlayerName("");
     }
 
     return (
