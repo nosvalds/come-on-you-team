@@ -1,6 +1,7 @@
 .main-header {
     text-align: center;
     padding: 2rem;
+    background-color: var(--light-black);
 }
 
 .main-header p {
@@ -8,5 +9,5 @@
 }
 
 .accent-color {
-    color: blue;
+    color: var(--red);
 }

@@ -1,3 +1,7 @@
+body {
+    background-color: var(--black);
+}
+
 .main-app {
     max-width: 1000px;
     margin: 0 auto;
