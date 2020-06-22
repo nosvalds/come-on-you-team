@@ -13,3 +13,8 @@
     justify-content: space-around;
     align-items: center;  
 }
+
+.pitch-header {
+    text-align: center;
+    padding: 1rem;
+}

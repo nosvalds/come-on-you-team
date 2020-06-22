@@ -22,14 +22,14 @@ const PlayerEntry = ({ handleSubmit, teamsFilled }) => {
             <section className="form-section">
                 <label
                     htmlFor="playerName"
-                    class="player-name-label"
+                    className="player-name-label"
                 >
                     Player Name
                 </label>
                 <input
                     type="text"
                     id="playerName"
-                    class="player-name-input"
+                    className="player-name-input"
                     value={ playerName }
                     onChange={ handleChange }
                 />
@@ -41,9 +41,9 @@ const PlayerEntry = ({ handleSubmit, teamsFilled }) => {
             </button>
         </form>
         :
-        <h2>
-            Teams Filled: Game On!
-        </h2>
+        <h3 className="pitch-header">
+            Teams Complete, Game On!
+        </h3>
     )
 }
 
