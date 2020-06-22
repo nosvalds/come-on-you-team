@@ -1,0 +1,11 @@
+.pitch-container {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+}
+
+.defense-container, .offense-container, .goal-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;    
+}
