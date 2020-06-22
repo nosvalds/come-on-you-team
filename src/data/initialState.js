@@ -5,23 +5,23 @@ const initialState = {
         positions: [
             {
                 id: 1,
-                name: "John"
+                name: ""
             },
             {
                 id: 2,
-                name: "Jacob"
+                name: ""
             },
             {
                 id: 3,
-                name: "JinkleHiemer"
+                name: ""
             },
             {
                 id: 4,
-                name: "Schmidt"
+                name: ""
             },
             {
                 id: 5,
-                name: "Billy"
+                name: ""
             },
         ]
     },
@@ -30,23 +30,23 @@ const initialState = {
         positions: [
             {
                 id: 1,
-                name: "Tommy"
+                name: ""
             },
             {
                 id: 2,
-                name: "Bobby"
+                name: ""
             },
             {
                 id: 3,
-                name: "Josephine"
+                name: ""
             },
             {
                 id: 4,
-                name: "Carl"
+                name: ""
             },
             {
                 id: 5,
-                name: "David"
+                name: ""
             },
         ]
     }

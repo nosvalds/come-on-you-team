@@ -1,15 +1,21 @@
 import React, { useState } from 'react';
 
-const PlayerEntry = () => {
+const PlayerEntry = ({ handleSubmit }) => {
     // useState for the form input control
     const [playerName, setPlayerName] = useState("");
     const handleChange = (e) => {
         setPlayerName(e.currentTarget.value);
     }
 
+    const handleFormSubmit = (e) => {
+        e.preventDefault();
+        handleSubmit(playerName);
+    }
+
     return (
         <form
-            className="player-entry-form" 
+            className="player-entry-form"
+            onSubmit={ handleFormSubmit } 
         >
             <section className="form-section">
                 <label
