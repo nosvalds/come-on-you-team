@@ -22,6 +22,7 @@ const addPlayer = (state, action) => {
       ...state,
       [team]: {
         ...state[team],
+        positionsFilled: state[team].positionsFilled + 1,
         positions: state[team].positions.map((player, index) => {
           return index === i ? {...player, name: action.name} : {...player};
         })

@@ -2,6 +2,7 @@ const initialState = {
     playersASide: 5,
     team_A: {
         name: "Team A",
+        positionsFilled: 0,
         positions: [
             {
                 id: 1,
@@ -27,6 +28,8 @@ const initialState = {
     },
     team_B: {
         name: "Team B",
+        rosterFull: false,
+        positionsFilled: 0,
         positions: [
             {
                 id: 1,

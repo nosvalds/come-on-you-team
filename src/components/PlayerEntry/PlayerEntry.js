@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
 
-const PlayerEntry = ({ handleSubmit }) => {
+const PlayerEntry = ({ handleSubmit, teamsFilled }) => {
     // useState for the form input control
     const [playerName, setPlayerName] = useState("");
     const handleChange = (e) => {
         setPlayerName(e.currentTarget.value);
     }
 
+    // call handleSubmit and pass the playerName from the input field
     const handleFormSubmit = (e) => {
         e.preventDefault();
         handleSubmit(playerName);
         setPlayerName("");
     }
 
-    return (
+    return ( !teamsFilled ?
         <form
             className="player-entry-form"
             onSubmit={ handleFormSubmit } 
@@ -30,7 +31,7 @@ const PlayerEntry = ({ handleSubmit }) => {
                     id="playerName"
                     class="player-name-input"
                     value={ playerName }
-                    onChange={ (e) => handleChange(e) }
+                    onChange={ handleChange }
                 />
             </section>
             <button
@@ -39,6 +40,10 @@ const PlayerEntry = ({ handleSubmit }) => {
                 Add Player
             </button>
         </form>
+        :
+        <h2>
+            Teams Filled: Game On!
+        </h2>
     )
 }
 
