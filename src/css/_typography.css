@@ -1,6 +1,6 @@
 body {
     font-family: 'Archivo Narrow', Helvetica, sans-serif;
-    color: var(--white);
+    color: var(--text-primary);
 }
 
 h1 {
@@ -14,8 +14,8 @@ h3 {
 
 h4 {
     font-size: 2rem;
-    background-color: var(--white);
-    color: var(--black);
+    background-color: var(--text-primary);
+    color: var(--text-secondary);
     padding: 0.5rem;
     border-radius: 5px;
 }

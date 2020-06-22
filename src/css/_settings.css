@@ -15,10 +15,10 @@
 :root {
     font-size: 16px;
 
-    --black: #002626;
-    --white: #fefefe;
-    --light-black: #0E4749;
-    --red: #E55812;
+    --text-secondary: #002626;
+    --text-primary: #FEFEFE;
+    --banner-back: #0E4749;
+    --accent: #D3F6DB;
     --dark-green: #277D0F;
     --light-green: #477E19;
 }

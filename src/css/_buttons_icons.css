@@ -5,6 +5,6 @@
 }
 
 .btn-primary:hover {
-    background-color: var(--red);
+    background-color: var(--accent);
     cursor: pointer;
 }
