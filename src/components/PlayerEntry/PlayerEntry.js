@@ -20,18 +20,20 @@ const PlayerEntry = ({ handleSubmit }) => {
             <section className="form-section">
                 <label
                     htmlFor="playerName"
+                    class="player-name-label"
                 >
-                    Player Name:
+                    Player Name
                 </label>
                 <input
                     type="text"
                     id="playerName"
+                    class="player-name-input"
                     value={ playerName }
                     onChange={ (e) => handleChange(e) }
                 />
             </section>
             <button
-                className="button"
+                className="btn-primary"
             >
                 Add Player
             </button>

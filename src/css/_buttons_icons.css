@@ -1,0 +1,10 @@
+.btn-primary {
+    padding: 1rem;
+    border-radius: 15px;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
