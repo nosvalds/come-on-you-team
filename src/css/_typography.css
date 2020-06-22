@@ -29,3 +29,7 @@ label, input {
     font-size: 1.5rem;
 }
 
+footer p {
+    color: var(--accent);
+}
+

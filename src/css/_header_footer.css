@@ -12,3 +12,9 @@
 .accent-color {
     color: var(--accent);
 }
+
+.main-footer {
+    padding: 0.75rem;
+    background-color: var(--banner-back);
+    text-align: right;
+}

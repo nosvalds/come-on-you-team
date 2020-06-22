@@ -1,0 +1,8 @@
+.team-info {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--banner-back);
+    padding: 0.5rem;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
