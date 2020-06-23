@@ -10,6 +10,7 @@ const mapStateToProps = (state) => {
     };
 }
 
+// dispatch the addPlayer action to assign the player to a team
 const mapDispatchToProps = (dispatch) => {
     return {
         handleSubmit: (name) => dispatch(addPlayer(name)),
