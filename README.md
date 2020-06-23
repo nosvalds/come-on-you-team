@@ -17,6 +17,18 @@ You can view my full design notes [here](./design_notes.md).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## Deploying to gitHub Pages
+```bash
+npm run deploy
+```
+
+- The above command uses the gh-pages package to deploy to gitHub pages. Script lives in package.json and runs:
+```
+react-scripts build
+gh-pages -d build
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
