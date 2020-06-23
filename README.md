@@ -14,9 +14,15 @@ As for technologies I decided to start with a React/Redux web application. I fig
 
 You can view my full design notes [here](./design_notes.md).
 
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## v2.0
+### Planned Features
+- Pick # of Teams per side
+- Change team names
+- Reset and Reshuffle buttons
+- Refactor Off/Def components
+- Make Mobile-friendly
 
 ## Deploying to gitHub Pages
 ```bash
