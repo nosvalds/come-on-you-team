@@ -20,9 +20,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Planned Features
 [X] Pick # of Teams per side
 [X] Ability to change team names
-- Reset and Reshuffle buttons
-- Refactor Off/Def components
-- Make Mobile-friendly
+[_] Reset and Reshuffle buttons
+[_] Refactor Offense/Defense components
+[_] Make Mobile-friendly and responsive
 
 ## Deploying to gitHub Pages
 ```bash
