@@ -22,8 +22,8 @@ const addPlayer = (state, action) => {
       ...state,
       [team]: {
         ...state[team],
-        positionsFilled: state[team].positionsFilled + 1,
-        positions: state[team].positions.map((player, index) => {
+        positionsFilled: state[team].positionsFilled + 1, // increment the number of positions filled
+        positions: state[team].positions.map((player, index) => { // save the player name into the randomly selected position
           return index === i ? {...player, name: action.name} : {...player};
         })
       }
@@ -34,7 +34,7 @@ const addPlayer = (state, action) => {
 // Reducer function
 const reducer = (state, action) => {
     switch (action.type) {
-      case "ADD_PLAYER": return addPlayer(state, action);
+      case "ADD_PLAYER": return addPlayer(state, action); // add player randomly into a position
       default: return state;
     }
   }
