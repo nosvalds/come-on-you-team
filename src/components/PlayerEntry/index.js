@@ -6,7 +6,7 @@ import { addPlayer } from '../../data/actions/state';
 const mapStateToProps = (state) => {
     let teamSize = state.teamSize;
     return {
-        teamsFilled: (state.team_A.positionsFilled === teamSize && state.team_B.positionsFilled === teamSize)
+        teamsFilled: (state.teamA.positionsFilled === teamSize && state.teamB.positionsFilled === teamSize)
     };
 }
 

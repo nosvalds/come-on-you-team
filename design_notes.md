@@ -28,7 +28,7 @@
 ```js
 {
  teamSize: 5,
- team_A : {
+ teamA : {
  	name: "team A",
     positions: [
         { id: 
@@ -39,7 +39,7 @@
         }, 
         ...
     ],
- team_B : {
+ teamB : {
  	name: "team B",
     positions: [
         { id: 

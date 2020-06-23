@@ -9,7 +9,7 @@ const getRandomInt = (min, max) => {
 // randomly add a player to a team
 const addPlayer = (state, action) => {
   // pick a random team
-  let team = getRandomInt(1, 2) === 1 ? "team_A" : "team_B";
+  let team = getRandomInt(1, 2) === 1 ? "teamA" : "teamB";
   // pick a random position 
   let i = getRandomInt(0, state.teamSize - 1);
   // only add the player name to the position if it's not already filled
@@ -40,11 +40,11 @@ const setTeamSize = (state, action) => {
   return {
     ...state,
     teamSize: action.teamSize,
-    team_A: {
+    teamA: {
       positionsFilled: 0,
       positions
     },
-    team_B: {
+    teamB: {
       positionsFilled: 0,
       positions
     }
@@ -52,11 +52,22 @@ const setTeamSize = (state, action) => {
   }
 } 
 
+// Update Team names
+const setTeamNames = (state, action) => {
+  return {
+    ...state,
+    teamA: {...state.teamA, name: action.teamA },
+    teamB: {...state.teamB, name: action.teamB },
+    editTeamName: false,
+  }
+}
+
 // Reducer function
 const reducer = (state, action) => {
     switch (action.type) {
       case "ADD_PLAYER": return addPlayer(state, action); // add player randomly into a position
-      case "SET_TEAMSIZE": return setTeamSize(state, action);
+      case "SET_TEAM_SIZE": return setTeamSize(state, action);
+      case "SET_TEAM_NAMES": return setTeamNames(state, action);
       default: return state;
     }
   }

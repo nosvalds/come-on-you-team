@@ -3,10 +3,10 @@ import React from 'react';
 // Standard Components
 
 import Pitch from './components/Pitch/Pitch';
-import TeamInfo from './components/TeamInfo/TeamInfo';
 import Footer from './components/Footer/Footer';
 
 // React-Redux (state/dispatch passed from index.js)
+import TeamInfo from './components/TeamInfo';
 import PlayerEntry from './components/PlayerEntry';
 import TeamSize from './components/TeamSize';
 import Header from './components/Header';

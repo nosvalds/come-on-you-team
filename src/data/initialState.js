@@ -1,6 +1,8 @@
 const initialState = {
     teamSize: 5,
-    team_A: {
+    editTeamName: true,
+    teamA: {
+        name: "Team A",
         positionsFilled: 0,
         positions: [
             {
@@ -20,7 +22,8 @@ const initialState = {
             },
         ]
     },
-    team_B: {
+    teamB: {
+        name: "Team B",
         positionsFilled: 0,
         positions: [
             {

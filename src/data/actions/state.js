@@ -9,7 +9,15 @@ export const addPlayer = (name) => {
 
 export const setTeamSize = (teamSize) => {
     return {
-        type: "SET_TEAMSIZE",
+        type: "SET_TEAM_SIZE",
         teamSize
+    }
+}
+
+export const setTeamNames = ({ teamA, teamB}) => {
+    return {
+        type: "SET_TEAM_NAMES",
+        teamA,
+        teamB,
     }
 }
