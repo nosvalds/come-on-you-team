@@ -34,6 +34,7 @@ const PlayerEntry = ({ handleSubmit, teamsFilled }) => {
                     className="player-name-input"
                     value={ playerName }
                     onChange={ handleChange }
+                    required
                 />
             </section>
             <button
