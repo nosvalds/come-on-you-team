@@ -27,7 +27,7 @@
 ### State
 ```js
 {
- playersASide: 5,
+ teamSize: 5,
  team_A : {
  	name: "team A",
     positions: [

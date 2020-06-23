@@ -1,5 +1,5 @@
 const initialState = {
-    playersASide: 5,
+    teamSize: 5,
     team_A: {
         positionsFilled: 0,
         positions: [

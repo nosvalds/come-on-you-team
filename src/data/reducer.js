@@ -31,10 +31,19 @@ const addPlayer = (state, action) => {
   }
 }
 
+// set the team size
+const setTeamSize = (state, action) => {
+  return {
+    ...state,
+    teamSize: action.teamSize
+  }
+} 
+
 // Reducer function
 const reducer = (state, action) => {
     switch (action.type) {
       case "ADD_PLAYER": return addPlayer(state, action); // add player randomly into a position
+      case "SET_TEAMSIZE": return setTeamSize(state, action);
       default: return state;
     }
   }

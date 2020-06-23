@@ -8,11 +8,13 @@ import Footer from './components/Footer/Footer';
 
 // React-Redux (state/dispatch passed from index.js)
 import PlayerEntry from './components/PlayerEntry';
+import TeamSize from './components/TeamSize';
 
 function App() {
   return (
     <main className="main-app">
       <Header />
+      <TeamSize initial={ 5 } min={ 3 } max={ 11 } />
       <PlayerEntry />
       <TeamInfo />
       <Pitch />

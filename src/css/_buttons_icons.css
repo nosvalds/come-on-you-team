@@ -9,6 +9,25 @@
     cursor: pointer;
 }
 
+.btn-increment {
+    border: none;
+}
+
+.btn-increment-l {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.btn-increment-r {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.btn-increment:hover {
+    background-color: var(--accent);
+    cursor: pointer;
+}
+
 .icon-link {
     text-decoration: none;
     color: var(--accent);

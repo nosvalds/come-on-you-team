@@ -4,9 +4,9 @@ import { addPlayer } from '../../data/actions/state';
 
 // calculate and pass in whether or not the teams have full rosters of players
 const mapStateToProps = (state) => {
-    let playersASide = state.playersASide;
+    let teamSize = state.teamSize;
     return {
-        teamsFilled: (state.team_A.positionsFilled === playersASide && state.team_B.positionsFilled === playersASide)
+        teamsFilled: (state.team_A.positionsFilled === teamSize && state.team_B.positionsFilled === teamSize)
     };
 }
 
