@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/come-on-you-team/static/css/main.4c83470f.chunk.css",
+    "main.js": "/come-on-you-team/static/js/main.1a1101bb.chunk.js",
+    "main.js.map": "/come-on-you-team/static/js/main.1a1101bb.chunk.js.map",
+    "runtime-main.js": "/come-on-you-team/static/js/runtime-main.c5a4b573.js",
+    "runtime-main.js.map": "/come-on-you-team/static/js/runtime-main.c5a4b573.js.map",
+    "static/js/2.39c28205.chunk.js": "/come-on-you-team/static/js/2.39c28205.chunk.js",
+    "static/js/2.39c28205.chunk.js.map": "/come-on-you-team/static/js/2.39c28205.chunk.js.map",
+    "index.html": "/come-on-you-team/index.html",
+    "precache-manifest.f95d40668978cce799e8bea6fbf0f9b1.js": "/come-on-you-team/precache-manifest.f95d40668978cce799e8bea6fbf0f9b1.js",
+    "service-worker.js": "/come-on-you-team/service-worker.js",
+    "static/css/main.4c83470f.chunk.css.map": "/come-on-you-team/static/css/main.4c83470f.chunk.css.map",
+    "static/js/2.39c28205.chunk.js.LICENSE.txt": "/come-on-you-team/static/js/2.39c28205.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/come-on-you-team/static/media/pitch.9f55767a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c5a4b573.js",
+    "static/js/2.39c28205.chunk.js",
+    "static/css/main.4c83470f.chunk.css",
+    "static/js/main.1a1101bb.chunk.js"
+  ]
+}
