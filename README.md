@@ -19,7 +19,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## v2.0
 ### Planned Features
 [X] Pick # of Teams per side
-- Change team names
+[X] Ability to change team names
 - Reset and Reshuffle buttons
 - Refactor Off/Def components
 - Make Mobile-friendly
