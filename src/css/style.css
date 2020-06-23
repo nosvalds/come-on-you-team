@@ -1,17 +1,21 @@
 /* style.css */
 /*           */
 
-/* Using a reset.css */
+/* Using a reset.css to clear browser defaults */
 @import '_reset.css';
 
 /* settings */
 @import '_settings.css';
 
+/* Atoms/Molecules */
 @import '_typography.css';
+@import '_buttons_icons.css';
 @import '_header_footer.css';
+
+/* main partials */
 @import '_pitch.css';
 @import '_player_entry.css';
-@import '_buttons_icons.css';
 @import '_team_info.css';
 
+/* layout */
 @import '_layout.css';
