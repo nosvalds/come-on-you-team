@@ -1,3 +1,21 @@
+# Come On You _____ ! 
+- The football team randomizer app
+
+## v1.0
+### Background
+The initial project brief was to create an app that takes 10 player names and randomly sorts them into two 5-a-side football teams. I set out to create a web app that met these requirements, but looked ahead to future functionality that I wanted to add. 
+
+### Plan
+I spent most of the first morning putting the ideas that had popped into my head over the weekend into notes and on paper in a drawing. Visually I wanted the players to be laid out on the screen with a football pitch background as I thought this would be a nice visual representation and would potentially give me the option of adding "formations" to further releases. 
+
+As I was planning I split out the Minimum Viable Product (MVP) and "stretch" ideas. While I was designing the MVP, I tried to keep and eye out for places in the design and code that I could make things easily changeable and expandable for the future features I knew I wanted to pursure. 
+
+As for technologies I decided to start with a React/Redux web application. I figured this was likely overkill for the MVP, but with my stretch goals would become more neccessary for the interactivity that I desired. Also looking through previous project examples I saw they were able to achieve good functionality with these technologies. I also penciled in the thought of creating a back end Laravel API to keep track of league progress over time. 
+
+You can view my full design notes [here](./design_notes.md).
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
