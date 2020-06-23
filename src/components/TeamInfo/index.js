@@ -7,8 +7,8 @@ const mapStateToProps = (state) => {
     let teamSize = state.teamSize;
     return {
         edit: (state.editTeamName && (state.teamA.positionsFilled === teamSize && state.teamB.positionsFilled === teamSize)),
-        initialTeamB: state.teamA.name,
-        initialTeamA: state.teamB.name,
+        initialTeamA: state.teamA.name,
+        initialTeamB: state.teamB.name,
     };
 }
 
