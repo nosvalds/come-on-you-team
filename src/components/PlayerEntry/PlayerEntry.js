@@ -31,7 +31,7 @@ const PlayerEntry = ({ handleSubmit, teamsFilled }) => {
                 <input
                     type="text"
                     id="playerName"
-                    className="player-name-input"
+                    className="name-input"
                     value={ playerName }
                     onChange={ handleChange }
                     required

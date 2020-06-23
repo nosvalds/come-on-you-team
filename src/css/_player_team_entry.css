@@ -2,10 +2,10 @@
     padding: 1rem;
 }
 
-.player-name-input {
+.name-input {
     padding: 0.25rem;
     border-radius: 5px;
-    border: 1px solid black;
+    border: none;
 }
 
 .player-entry-form {
