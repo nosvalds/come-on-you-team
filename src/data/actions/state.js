@@ -21,3 +21,9 @@ export const setTeamNames = ({ teamA, teamB}) => {
         teamB,
     }
 }
+
+export const editTeamNames = () => {
+    return {
+        type: "EDIT_TEAM_NAMES",
+    }
+}

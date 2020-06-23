@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const TeamInfo = ({ edit, handleSubmit, initialTeamA, initialTeamB }) => {
+const TeamInfo = ({ edit, handleSubmit, handleClick, initialTeamA, initialTeamB }) => {
     const [teamA, setTeamA] = useState(initialTeamA);
     const [teamB, setTeamB] = useState(initialTeamB);
 
@@ -69,8 +69,16 @@ const TeamInfo = ({ edit, handleSubmit, initialTeamA, initialTeamB }) => {
                 </form>
                 : 
                 <>
-                    <h3>{ teamA }</h3>
-                    <h3>{ teamB }</h3> 
+                    <h3
+                        onClick={ handleClick }
+                    >
+                        { teamA }
+                    </h3>
+                    <h3
+                        onClick={ handleClick }    
+                    >
+                        { teamB }
+                    </h3> 
                 </>
             }
         </section>

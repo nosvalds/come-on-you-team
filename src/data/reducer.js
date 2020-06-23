@@ -62,12 +62,21 @@ const setTeamNames = (state, action) => {
   }
 }
 
+// flip editTeamName to true to allow editing of the team names
+const editTeamNames = (state) => {
+  return {
+    ...state,
+    editTeamName: true,
+  }
+}
+
 // Reducer function
 const reducer = (state, action) => {
     switch (action.type) {
       case "ADD_PLAYER": return addPlayer(state, action); // add player randomly into a position
       case "SET_TEAM_SIZE": return setTeamSize(state, action);
       case "SET_TEAM_NAMES": return setTeamNames(state, action);
+      case "EDIT_TEAM_NAMES": return editTeamNames(state);
       default: return state;
     }
   }

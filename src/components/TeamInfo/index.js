@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import TeamInfo from './TeamInfo';
-import { setTeamNames } from '../../data/actions/state';
+import { setTeamNames, editTeamNames } from '../../data/actions/state';
 
 // calculate and pass in whether or not the teams have full rosters of players
 const mapStateToProps = (state) => {
@@ -16,6 +16,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         handleSubmit: (names) => dispatch(setTeamNames(names)),
+        handleClick: () => dispatch(editTeamNames()),
     };
 }
 
