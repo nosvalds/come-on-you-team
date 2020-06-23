@@ -1,12 +1,16 @@
 .main-header {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     background-color: var(--banner-back);
     border-radius: 5px;
 }
 
+.main-header h1 {
+    margin-bottom: 0.5rem;
+}
+
 .main-header p {
-    padding: 1rem;
+    padding: 0.25rem;
 }
 
 .accent-color {
