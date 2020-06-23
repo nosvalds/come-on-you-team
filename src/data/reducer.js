@@ -11,7 +11,7 @@ const addPlayer = (state, action) => {
   // pick a random team
   let team = getRandomInt(1, 2) === 1 ? "team_A" : "team_B";
   // pick a random position 
-  let i = getRandomInt(0, 4);
+  let i = getRandomInt(0, state.teamSize - 1);
   // only add the player name to the position if it's not already filled
   if (state[team].positions[i].name !== "") {
     // if already filled call this function again to try another random spot
@@ -31,11 +31,24 @@ const addPlayer = (state, action) => {
   }
 }
 
-// set the team size
+// set the team size and create initial state of position (array of objects)
 const setTeamSize = (state, action) => {
+  let positions = [];
+  for (let i = 0; i < action.teamSize; i += 1) {
+    positions[i] = { name: "" };
+  }
   return {
     ...state,
-    teamSize: action.teamSize
+    teamSize: action.teamSize,
+    team_A: {
+      positionsFilled: 0,
+      positions
+    },
+    team_B: {
+      positionsFilled: 0,
+      positions
+    }
+
   }
 } 
 

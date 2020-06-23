@@ -2,9 +2,16 @@ import { connect } from 'react-redux';
 import Defense from './Defense';
 
 const mapStateToProps = ( state, { team }) => {
-    // use team prop to get the defense players from state. For now D players are always the 2nd and 3rd player in the positions array
+    // use team prop to get the defense players from state. 
+    // calculate how many D players we have then filter non-D players out of the positions array and pass to the component
+    let initial = 1; 
+    let teamSize = state.teamSize;
+    let numDefenders = Math.floor((teamSize - 1) / 2)
+
     return {
-        players: [state[team].positions[1].name, state[team].positions[2].name ],
+        players: state[team].positions.filter((player, i) => (
+            (i >= initial && i <= initial + numDefenders - 1)
+        )),
     };
 }
 

@@ -8,7 +8,7 @@ const Offense = ({ players }) => {
                         key={ i }
                         className="player-name"
                     >
-                        { player }
+                        { player.name }
                     </h4>
                 ))
             }
