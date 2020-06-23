@@ -1,10 +1,19 @@
-.pitch-container {
+.pitch-container-background {
+    background: url(../img/pitch.png); 
+    background-size: cover;
+    height: 0;
+    padding-top: calc(812 / 1280 * 100%);
+    position: relative;
+}
+
+.pitch-container-inside {
     display: flex;
     justify-content: space-between;
-    background: url(../img/pitch.png) no-repeat; 
-    background-size: cover;
-    height: 49.5vw;
-    max-height: 820px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .defense-container, .offense-container, .goal-container {
