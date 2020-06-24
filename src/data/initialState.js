@@ -1,47 +1,15 @@
 const initialState = {
-    teamSize: 5,
+    teamSize: 0,
     editTeamName: true,
     teamA: {
         name: "Team A",
         positionsFilled: 0,
-        positions: [
-            {
-                name: ""
-            },
-            {
-                name: ""
-            },
-            {
-                name: ""
-            },
-            {
-                name: ""
-            },
-            {
-                name: ""
-            },
-        ]
+        positions: [],
     },
     teamB: {
         name: "Team B",
         positionsFilled: 0,
-        positions: [
-            {
-                name: ""
-            },
-            {
-                name: ""
-            },
-            {
-                name: ""
-            },
-            {
-                name: ""
-            },
-            {
-                name: ""
-            },
-        ]
+        positions: [],
     }
   };
   

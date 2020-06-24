@@ -41,14 +41,13 @@ const setTeamSize = (state, action) => {
     ...state,
     teamSize: action.teamSize,
     teamA: {
-      positionsFilled: 0,
+      ...state.teamA,
       positions
     },
     teamB: {
-      positionsFilled: 0,
+      ...state.teamB,
       positions
     }
-
   }
 } 
 
