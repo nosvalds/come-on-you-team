@@ -22,7 +22,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] Ability to change team names
 - [x] Update game flow due to above changes
 - [x] Reset/New Match and Shuffle buttons
-- [ ] Refactor Offense/Defense components
+- [x] Refactor Offense/Defense/Goal components to be re-useable
 - [ ] Make Mobile-friendly and responsive
 
 ## Deploying to gitHub Pages
