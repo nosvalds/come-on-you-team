@@ -17,3 +17,15 @@
 .form-section input {
     text-align: center;
 }
+
+/* Mobile */
+@media (max-width: 650px) { 
+    .team-entry-form {
+        flex-direction: column;
+    }
+
+    .form-section input {
+        margin-bottom: 0.5rem;
+    }
+
+}

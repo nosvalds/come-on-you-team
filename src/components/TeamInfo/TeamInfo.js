@@ -45,11 +45,6 @@ const TeamInfo = ({ edit, handleSubmit, handleClick, initialTeamA, initialTeamB 
                             required
                         />
                     </section>
-                    <button
-                        className="btn-primary"
-                    >
-                        Set
-                    </button>
                     <section className="form-section">
                         <label
                             htmlFor="teamA"
@@ -66,6 +61,11 @@ const TeamInfo = ({ edit, handleSubmit, handleClick, initialTeamA, initialTeamB 
                             required
                         />
                     </section>
+                    <button
+                        className="btn-primary"
+                    >
+                        Set
+                    </button>
                 </form>
                 : 
                 <>

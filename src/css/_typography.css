@@ -41,6 +41,12 @@ footer p {
 
 /* Mobile */
 @media (max-width: 500px) {
+    h3 {
+        font-size: 2rem;
+    }
+    .team-info h3 {
+        font-size: 1.25rem;
+    }
     h4 {
         font-size: 1rem;
     }
