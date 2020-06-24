@@ -1,3 +1,5 @@
+import initialState from './initialState';
+
 // random integer function
 const getRandomInt = (min, max) => {
   min = Math.ceil(min);
@@ -76,6 +78,7 @@ const reducer = (state, action) => {
       case "SET_TEAM_SIZE": return setTeamSize(state, action);
       case "SET_TEAM_NAMES": return setTeamNames(state, action);
       case "EDIT_TEAM_NAMES": return editTeamNames(state);
+      case "RESET": return {...initialState}; // back to initial state
       default: return state;
     }
   }

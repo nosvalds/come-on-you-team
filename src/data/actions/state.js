@@ -27,3 +27,15 @@ export const editTeamNames = () => {
         type: "EDIT_TEAM_NAMES",
     }
 }
+
+export const resetMatch = () => {
+    return {
+        type: "RESET",
+    }
+}
+
+export const shuffleTeams = () => {
+    return {
+        type: "SHUFFLE_TEAMS",
+    }
+}
