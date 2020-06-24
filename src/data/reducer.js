@@ -71,6 +71,38 @@ const editTeamNames = (state) => {
   }
 }
 
+// knuth shuffle function
+const knuthShuffle = (array) => {
+  for (let i = array.length - 1; i > 0; i -= 1) {
+    let rand = Math.floor((i + 1) * Math.random()); //get random between zero and i (inclusive)
+    let temp = array[i];   //swap i and the random index
+    array[i] = array[rand];
+    array[rand] = temp;
+  }
+
+  return array;
+}
+
+
+// shuffle the teams randomly using knutf shuffle method
+const shuffleTeams = (state) => {
+  // get teams into one array
+  let players = [...state.teamA.positions, ...state.teamB.positions];
+  players = knuthShuffle(players); // shuffle
+
+  return {
+    ...state,
+    teamA: {
+      ...state.teamA,
+      positions: players.slice(0,(players.length / 2)), // return first half players array
+    },
+    teamB: {
+      ...state.teamB,
+      positions: players.slice((players.length / 2)), // return second half of players array
+    }
+  }
+}
+
 // Reducer function
 const reducer = (state, action) => {
     switch (action.type) {
@@ -78,6 +110,7 @@ const reducer = (state, action) => {
       case "SET_TEAM_SIZE": return setTeamSize(state, action);
       case "SET_TEAM_NAMES": return setTeamNames(state, action);
       case "EDIT_TEAM_NAMES": return editTeamNames(state);
+      case "SHUFFLE_TEAMS": return shuffleTeams(state);
       case "RESET": return {...initialState}; // back to initial state
       default: return state;
     }
