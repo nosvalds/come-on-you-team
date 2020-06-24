@@ -16,6 +16,7 @@
 @import '_pitch.css';
 @import '_player_team_entry.css';
 @import '_team_info.css';
+@import '_match_options.css';
 
 /* layout */
 @import '_layout.css';

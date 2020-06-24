@@ -20,6 +20,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Planned Features
 - [x] Pick # of Teams per side
 - [x] Ability to change team names
+- [x] Update game flow due to above changes
 - [ ] Reset and Reshuffle buttons
 - [ ] Refactor Offense/Defense components
 - [ ] Make Mobile-friendly and responsive

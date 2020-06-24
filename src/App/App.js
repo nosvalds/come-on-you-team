@@ -1,7 +1,6 @@
 import React from 'react';
 
 // Standard Components
-
 import Header from '../components/Header/Header';
 import Pitch from '../components/Pitch/Pitch';
 import Footer from '../components/Footer/Footer';
@@ -10,6 +9,7 @@ import Footer from '../components/Footer/Footer';
 import TeamInfo from '../components/TeamInfo';
 import PlayerEntry from '../components/PlayerEntry';
 import TeamSize from '../components/TeamSize';
+import MatchOptions from '../components/MatchOptions';
 
 
 function App({ teamSize }) {
@@ -23,6 +23,7 @@ function App({ teamSize }) {
           <PlayerEntry />
           <TeamInfo />
           <Pitch />
+          <MatchOptions />
         </>
       }
       <Footer />
