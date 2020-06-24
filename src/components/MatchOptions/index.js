@@ -6,7 +6,7 @@ import { resetMatch, shuffleTeams } from '../../data/actions/state';
 const mapStateToProps = (state) => {
     let teamSize = state.teamSize;
     return {
-        teamsFilled: (state.teamA.positionsFilled === teamSize && state.teamB.positionsFilled === teamSize)
+        teamsFilled: (state.teamA.playersFilled === teamSize && state.teamB.playersFilled === teamSize)
     };
 }
 

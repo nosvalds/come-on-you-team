@@ -3,13 +3,13 @@ const initialState = {
     editTeamName: true,
     teamA: {
         name: "Team A",
-        positionsFilled: 0,
-        positions: [],
+        playersFilled: 0,
+        players: [],
     },
     teamB: {
         name: "Team B",
-        positionsFilled: 0,
-        positions: [],
+        playersFilled: 0,
+        players: [],
     }
   };
   

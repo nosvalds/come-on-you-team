@@ -6,7 +6,7 @@ import { setTeamNames, editTeamNames } from '../../data/actions/state';
 const mapStateToProps = (state) => {
     let teamSize = state.teamSize;
     return {
-        edit: (state.editTeamName && (state.teamA.positionsFilled === teamSize && state.teamB.positionsFilled === teamSize)),
+        edit: (state.editTeamName && (state.teamA.playersFilled === teamSize && state.teamB.playersFilled === teamSize)),
         initialTeamA: state.teamA.name,
         initialTeamB: state.teamB.name,
     };

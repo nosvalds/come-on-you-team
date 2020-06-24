@@ -15,7 +15,7 @@ const addPlayer = (state, action) => {
   // pick a random position 
   let i = getRandomInt(0, state.teamSize - 1);
   // only add the player name to the position if it's not already filled
-  if (state[team].positions[i].name !== "") {
+  if (state[team].players[i].name !== "") {
     // if already filled call this function again to try another random spot
     return addPlayer(state, action);
   } else {
@@ -24,8 +24,8 @@ const addPlayer = (state, action) => {
       ...state,
       [team]: {
         ...state[team],
-        positionsFilled: state[team].positionsFilled + 1, // increment the number of positions filled
-        positions: state[team].positions.map((player, index) => { // save the player name into the randomly selected position
+        playersFilled: state[team].playersFilled + 1, // increment the number of players filled
+        players: state[team].players.map((player, index) => { // save the player name into the randomly selected position
           return index === i ? {...player, name: action.name} : {...player};
         })
       }
@@ -35,20 +35,36 @@ const addPlayer = (state, action) => {
 
 // set the team size and create initial state of position (array of objects)
 const setTeamSize = (state, action) => {
-  let positions = [];
-  for (let i = 0; i < action.teamSize; i += 1) {
-    positions[i] = { name: "" };
+  let players = [];
+  let position = "";
+  let size = action.teamSize;
+  let numDefenders = Math.floor((size - 1) / 2);
+
+  for (let i = 0; i < size; i += 1) {
+    if (i === 0) {
+      position = "GK"
+    } else if (i >= 1 && i <= numDefenders){
+      position = "D"
+    } else {
+      position = "F"
+    }
+
+    players[i] = { 
+      name: "",
+      position, 
+    };
   }
+
   return {
     ...state,
     teamSize: action.teamSize,
     teamA: {
       ...state.teamA,
-      positions
+      players
     },
     teamB: {
       ...state.teamB,
-      positions
+      players
     }
   }
 } 
@@ -87,18 +103,18 @@ const knuthShuffle = (array) => {
 // shuffle the teams randomly using knutf shuffle method
 const shuffleTeams = (state) => {
   // get teams into one array
-  let players = [...state.teamA.positions, ...state.teamB.positions];
+  let players = [...state.teamA.players, ...state.teamB.players];
   players = knuthShuffle(players); // shuffle
 
   return {
     ...state,
     teamA: {
       ...state.teamA,
-      positions: players.slice(0,(players.length / 2)), // return first half players array
+      players: players.slice(0,(players.length / 2)), // return first half players array
     },
     teamB: {
       ...state.teamB,
-      positions: players.slice((players.length / 2)), // return second half of players array
+      players: players.slice((players.length / 2)), // return second half of players array
     }
   }
 }

@@ -9,7 +9,7 @@ const mapStateToProps = ( state, { team }) => {
     let numDefenders = Math.floor((teamSize - 1) / 2)
 
     return {
-        players: state[team].positions.filter((player, i) => (
+        players: state[team].players.filter((player, i) => (
             (i >= initial && i <= initial + numDefenders - 1)
         )),
     };
