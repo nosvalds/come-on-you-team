@@ -103,18 +103,25 @@ const knuthShuffle = (array) => {
 // shuffle the teams randomly using knutf shuffle method
 const shuffleTeams = (state) => {
   // get teams into one array
-  let players = [...state.teamA.players, ...state.teamB.players];
+  let players = [...state.teamA.players.map((player) => (player.name)), ...state.teamB.players.map((player) => (player.name))];
   players = knuthShuffle(players); // shuffle
+
+  let teamAplayers = players.slice(0,(players.length / 2));
+  let teamBplayers = players.slice((players.length / 2));
 
   return {
     ...state,
     teamA: {
       ...state.teamA,
-      players: players.slice(0,(players.length / 2)), // return first half players array
+      players: state.teamA.players.map((player, i) => 
+        ({...player, name: teamAplayers[i]})
+      ), // update the player names after they've been shuffled
     },
     teamB: {
       ...state.teamB,
-      players: players.slice((players.length / 2)), // return second half of players array
+      players: state.teamB.players.map((player, i) => 
+        ({...player, name: teamBplayers[i]})
+      ), // update the player names after they've been shuffled
     }
   }
 }
