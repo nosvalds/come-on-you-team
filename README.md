@@ -23,7 +23,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] Update game flow due to above changes
 - [x] Reset/New Match and Shuffle buttons
 - [x] Refactor Offense/Defense/Goal components to be re-useable
-- [ ] Make Mobile-friendly and responsive
+- [x] Make Mobile-friendly and responsive
 
 ## Deploying to gitHub Pages
 ```bash
