@@ -32,3 +32,16 @@
 .team-size-section h5 {
     align-self: center;
 }
+
+/* Mobile */
+@media (max-width: 600px) {
+    .form-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .player-name-label {
+        padding: 0.5rem;
+    }
+}
