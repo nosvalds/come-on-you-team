@@ -13,7 +13,8 @@ const Header = () => {
                     (<span className="accent-color">COY__!</span>)
                 }
             </h1>
-            <p>Select your team size, add players to the pitch to assign them randomly to teams, then set your team name.</p>
+            <p>Select your team size, add players to the pitch, then set your team name.</p>
+            <p>Players will be assigned randomly.</p>
         </header>
     )
 }
