@@ -23,10 +23,16 @@ You can view my full design notes [here](./design_notes.md).
 - [x] Refactor Offense/Defense/Goal components to be one "Pitch Section" re-useable component
 - [x] Make Mobile-friendly and responsive
 
+## v2.1
+### Fix/Update
+- [x] Fix game flow after user feedback
+  - Don't display "Teams Filled, Game On" until team names are filled out by the user
+  - Display direction to fill out team names when team names are in edit mode
+
 ## v3.0
 ### Planned Features/Work
 - [_] Back-end Laravel API to save match history
-- [_] Front-end updates to support GET requsts and display of match history
+- [_] Front-end updates to support GET/POST requests for saving and displaying match history
 - [_] Adding more visual icons/images for fun
 - [_] Update documentation for how to run this project
 

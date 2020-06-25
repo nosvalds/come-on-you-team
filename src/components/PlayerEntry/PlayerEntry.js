@@ -43,10 +43,8 @@ const PlayerEntry = ({ handleSubmit, teamsFilled }) => {
                 Add Player
             </button>
         </form>
-        : // once teams are full, game on!
-        <h3 className="pitch-header">
-            Teams full, Game On!
-        </h3>
+        : 
+        null
     )
 }
 
