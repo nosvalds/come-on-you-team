@@ -25,8 +25,10 @@ You can view my full design notes [here](./design_notes.md).
 
 ## v3.0
 ### Planned Features/Work
+- [_] Fix game flow after user feedback
+  - Don't display "Teams Filled, Game On" until team names are filled out by the user
 - [_] Back-end Laravel API to save match history
-- [_] Front-end updates to support GET requsts and display of match history
+- [_] Front-end updates to support GET/POST requests for saving and displaying match history
 - [_] Adding more visual icons/images for fun
 - [_] Update documentation for how to run this project
 
