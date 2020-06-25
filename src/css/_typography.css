@@ -20,6 +20,11 @@ h4 {
     border-radius: 5px;
 }
 
+h5 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
 button {
     font-family: 'Archivo Black', Helvetica, sans-serif;
     font-size: 1rem;
@@ -27,9 +32,22 @@ button {
 
 label, input {
     font-size: 1.5rem;
+    font-family: 'Archivo Narrow', Helvetica, sans-serif;
 }
 
 footer p {
     color: var(--accent);
 }
 
+/* Mobile */
+@media (max-width: 500px) {
+    h3 {
+        font-size: 2rem;
+    }
+    .team-info h3 {
+        font-size: 1.25rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+}

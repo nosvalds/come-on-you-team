@@ -1,0 +1,47 @@
+.player-name-label {
+    padding: 1rem;
+}
+
+.name-input {
+    padding: 0.25rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.player-entry-form {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.team-size-section {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.team-size-section .btn-primary {
+    margin-left: 1rem;
+}
+
+.increment-container {
+    display: flex;
+}
+
+.team-size-section h5 {
+    align-self: center;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .form-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .player-name-label {
+        padding: 0.5rem;
+    }
+}

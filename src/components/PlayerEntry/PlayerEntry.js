@@ -31,7 +31,7 @@ const PlayerEntry = ({ handleSubmit, teamsFilled }) => {
                 <input
                     type="text"
                     id="playerName"
-                    className="player-name-input"
+                    className="name-input"
                     value={ playerName }
                     onChange={ handleChange }
                     required
@@ -45,7 +45,7 @@ const PlayerEntry = ({ handleSubmit, teamsFilled }) => {
         </form>
         : // once teams are full, game on!
         <h3 className="pitch-header">
-            Teams Complete, Game On!
+            Teams full, Game On!
         </h3>
     )
 }

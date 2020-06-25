@@ -1,44 +1,15 @@
 const initialState = {
-    playersASide: 5,
-    team_A: {
-        positionsFilled: 0,
-        positions: [
-            {
-                name: ""
-            },
-            {
-                name: ""
-            },
-            {
-                name: ""
-            },
-            {
-                name: ""
-            },
-            {
-                name: ""
-            },
-        ]
+    teamSize: 0,
+    editTeamName: true,
+    teamA: {
+        name: "Team A",
+        playersFilled: 0,
+        players: [],
     },
-    team_B: {
-        positionsFilled: 0,
-        positions: [
-            {
-                name: ""
-            },
-            {
-                name: ""
-            },
-            {
-                name: ""
-            },
-            {
-                name: ""
-            },
-            {
-                name: ""
-            },
-        ]
+    teamB: {
+        name: "Team B",
+        playersFilled: 0,
+        players: [],
     }
   };
   

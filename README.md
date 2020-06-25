@@ -14,9 +14,16 @@ As for technologies I decided to start with a React/Redux web application. I fig
 
 You can view my full design notes [here](./design_notes.md).
 
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## v2.0
+### Planned Features
+- [x] Pick # of Teams per side
+- [x] Ability to change team names
+- [x] Update game flow due to above changes
+- [x] Reset/New Match and Shuffle buttons
+- [x] Refactor Offense/Defense/Goal components to be re-useable
+- [x] Make Mobile-friendly and responsive
 
 ## Deploying to gitHub Pages
 ```bash

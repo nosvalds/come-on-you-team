@@ -1,8 +1,31 @@
-.team-info {
+.team-info, .team-entry-form {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: var(--banner-back);
     padding: 0.5rem;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+}
+
+.team-name-label {
+    display: hidden;
+}
+.form-section {
+    padding: 0 1rem;
+}
+.form-section input {
+    text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 650px) { 
+    .team-entry-form {
+        flex-direction: column;
+    }
+
+    .form-section input {
+        margin-bottom: 0.5rem;
+    }
+
 }

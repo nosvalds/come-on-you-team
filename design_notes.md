@@ -27,8 +27,8 @@
 ### State
 ```js
 {
- playersASide: 5,
- team_A : {
+ teamSize: 5,
+ teamA : {
  	name: "team A",
     positions: [
         { id: 
@@ -39,7 +39,7 @@
         }, 
         ...
     ],
- team_B : {
+ teamB : {
  	name: "team B",
     positions: [
         { id: 

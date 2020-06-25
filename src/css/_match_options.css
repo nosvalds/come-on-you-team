@@ -1,0 +1,9 @@
+.match-options-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.match-options-section button {
+    margin: 0 2rem;
+}

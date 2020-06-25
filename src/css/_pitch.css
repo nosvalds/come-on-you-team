@@ -16,7 +16,7 @@
     height: 100%;
 }
 
-.defense-container, .offense-container, .goal-container {
+.pitch-section-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;

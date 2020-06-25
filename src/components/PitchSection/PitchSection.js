@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Defense = ({ players }) => {
+const PitchSection = ({ players }) => {
     return (
-        <section className="defense-container">
+        <section className="pitch-section-container">
             { players.map((player, i) => (
                     <h4
                         key={ i }
                         className="player-name"
                     >
-                        { player }
+                        { player.name }
                     </h4>
                 ))
             }
@@ -16,4 +16,4 @@ const Defense = ({ players }) => {
     )
 }
 
-export default Defense;
+export default PitchSection;
