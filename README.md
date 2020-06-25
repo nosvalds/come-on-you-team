@@ -17,13 +17,19 @@ You can view my full design notes [here](./design_notes.md).
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## v2.0
-### Planned Features
+### Features
 - [x] Pick # of Teams per side
 - [x] Ability to change team names
 - [x] Update game flow due to above changes
-- [x] Reset/New Match and Shuffle buttons
-- [x] Refactor Offense/Defense/Goal components to be re-useable
+- [x] Start Over and Shuffle buttons
+- [x] Refactor Offense/Defense/Goal components to be one "Pitch Section" re-useable component
 - [x] Make Mobile-friendly and responsive
+
+## v3.0
+### Planned Features
+- [_] Back-end Laravel API to save match history
+- [_] Front-end updates to support GET requsts and display of match history
+- [_] Adding more visual icons/images for fun
 
 ## Deploying to gitHub Pages
 ```bash
