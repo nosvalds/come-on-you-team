@@ -2,6 +2,7 @@
     padding: 1rem;
     border-radius: 15px;
     border: none;
+    background-color: var(--text-primary);
 }
 
 .btn-primary:hover {
@@ -11,6 +12,7 @@
 
 .btn-increment {
     border: none;
+    background-color: var(--text-primary);
 }
 
 .btn-increment-l {
