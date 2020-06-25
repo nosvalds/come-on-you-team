@@ -1,3 +1,5 @@
+import matchHistory from './testMatchData';
+
 const initialState = {
     teamSize: 0,
     editTeamName: true,
@@ -10,7 +12,8 @@ const initialState = {
         name: "Team B",
         playersFilled: 0,
         players: [],
-    }
+    },
+    matchHistory, 
   };
   
   export default initialState;

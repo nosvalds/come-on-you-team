@@ -39,6 +39,11 @@ footer p {
     color: var(--accent);
 }
 
+td button {
+    font-size: 0.75rem;
+    font-family: 'Archivo Narrow', Helvetica, sans-serif;
+}
+
 /* Mobile */
 @media (max-width: 500px) {
     h3 {

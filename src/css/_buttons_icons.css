@@ -39,3 +39,12 @@
 .icon-link:hover {
     color: var(--text-primary)
 }
+
+td button {
+    border: none;
+    border-radius: 2px;
+}
+td button:hover {
+    background-color: var(--accent);
+    cursor: pointer;
+}

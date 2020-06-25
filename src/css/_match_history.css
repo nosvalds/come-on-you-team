@@ -1,0 +1,25 @@
+.match-hist-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.match-hist-table {
+    align-self: center;
+    text-align: center;
+    border: 1px var(--dark-green) solid;
+    background-color: var(--light-green);
+}
+
+tr:nth-child(odd) {
+    background-color: var(--dark-green);
+}
+
+th {
+    color: var(--text-secondary);
+    background-color: var(--accent);
+    padding: 0.5rem;
+}
+
+td {
+    padding: 0.25rem 0.5rem;
+}

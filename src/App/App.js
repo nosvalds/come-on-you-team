@@ -11,7 +11,7 @@ import PlayerEntry from '../components/PlayerEntry';
 import TeamSize from '../components/TeamSize';
 import MatchOptions from '../components/MatchOptions';
 import PitchBanner from '../components/PitchBanner';
-
+import MatchHistory from '../components/MatchHistory';
 
 function App({ teamSize }) {
   return (
@@ -28,6 +28,7 @@ function App({ teamSize }) {
           <MatchOptions />
         </>
       }
+      <MatchHistory />
       <Footer />
     </main>
   );

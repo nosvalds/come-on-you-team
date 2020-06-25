@@ -1,0 +1,306 @@
+[
+    {
+        "id": 1,
+        "team_size": 4,
+        "teamA": {
+            "name": "FloralWhite",
+            "score": 3,
+            "won": false
+        },
+        "teamB": {
+            "name": "Lime",
+            "score": 5,
+            "won": true
+        },
+        "game_complete": true,
+        "tie": false
+    },
+    {
+        "id": 2,
+        "team_size": 9,
+        "teamA": {
+            "name": "SaddleBrown",
+            "score": 2,
+            "won": true
+        },
+        "teamB": {
+            "name": "LemonChiffon",
+            "score": 0,
+            "won": false
+        },
+        "game_complete": true,
+        "tie": false
+    },
+    {
+        "id": 4,
+        "team_size": 4,
+        "teamA": {
+            "name": "MidnightBlue",
+            "score": 4,
+            "won": false
+        },
+        "teamB": {
+            "name": "DarkSeaGreen",
+            "score": 5,
+            "won": false
+        },
+        "game_complete": false,
+        "tie": false
+    },
+    {
+        "id": 5,
+        "team_size": 8,
+        "teamA": {
+            "name": "Aqua",
+            "score": 0,
+            "won": false
+        },
+        "teamB": {
+            "name": "DarkSlateGray",
+            "score": 4,
+            "won": true
+        },
+        "game_complete": true,
+        "tie": false
+    },
+    {
+        "id": 6,
+        "team_size": 10,
+        "teamA": {
+            "name": "Bisque",
+            "score": 3,
+            "won": false
+        },
+        "teamB": {
+            "name": "Green",
+            "score": 1,
+            "won": false
+        },
+        "game_complete": false,
+        "tie": false
+    },
+    {
+        "id": 7,
+        "team_size": 9,
+        "teamA": {
+            "name": "Teal",
+            "score": 3,
+            "won": true
+        },
+        "teamB": {
+            "name": "Peru",
+            "score": 2,
+            "won": false
+        },
+        "game_complete": true,
+        "tie": false
+    },
+    {
+        "id": 8,
+        "team_size": 5,
+        "teamA": {
+            "name": "DarkViolet",
+            "score": 1,
+            "won": false
+        },
+        "teamB": {
+            "name": "LightGreen",
+            "score": 3,
+            "won": true
+        },
+        "game_complete": true,
+        "tie": false
+    },
+    {
+        "id": 9,
+        "team_size": 3,
+        "teamA": {
+            "name": "PeachPuff",
+            "score": 5,
+            "won": false
+        },
+        "teamB": {
+            "name": "FloralWhite",
+            "score": 5,
+            "won": false
+        },
+        "game_complete": false,
+        "tie": false
+    },
+    {
+        "id": 10,
+        "team_size": 10,
+        "teamA": {
+            "name": "MediumSlateBlue",
+            "score": 2,
+            "won": false
+        },
+        "teamB": {
+            "name": "Cornsilk",
+            "score": 3,
+            "won": true
+        },
+        "game_complete": true,
+        "tie": false
+    },
+    {
+        "id": 11,
+        "team_size": 4,
+        "teamA": {
+            "name": "Yellow",
+            "score": 3,
+            "won": true
+        },
+        "teamB": {
+            "name": "MidnightBlue",
+            "score": 2,
+            "won": false
+        },
+        "game_complete": true,
+        "tie": false
+    },
+    {
+        "id": 12,
+        "team_size": 6,
+        "teamA": {
+            "name": "MediumBlue",
+            "score": 4,
+            "won": false
+        },
+        "teamB": {
+            "name": "LightGoldenRodYellow",
+            "score": 3,
+            "won": false
+        },
+        "game_complete": false,
+        "tie": false
+    },
+    {
+        "id": 13,
+        "team_size": 3,
+        "teamA": {
+            "name": "Chocolate",
+            "score": 4,
+            "won": true
+        },
+        "teamB": {
+            "name": "WhiteSmoke",
+            "score": 1,
+            "won": false
+        },
+        "game_complete": true,
+        "tie": false
+    },
+    {
+        "id": 14,
+        "team_size": 10,
+        "teamA": {
+            "name": "DarkCyan",
+            "score": 2,
+            "won": true
+        },
+        "teamB": {
+            "name": "CornflowerBlue",
+            "score": 0,
+            "won": false
+        },
+        "game_complete": true,
+        "tie": false
+    },
+    {
+        "id": 15,
+        "team_size": 6,
+        "teamA": {
+            "name": "AliceBlue",
+            "score": 3,
+            "won": true
+        },
+        "teamB": {
+            "name": "DarkGray",
+            "score": 0,
+            "won": false
+        },
+        "game_complete": true,
+        "tie": false
+    },
+    {
+        "id": 16,
+        "team_size": 5,
+        "teamA": {
+            "name": "BLUE",
+            "score": 3,
+            "won": true
+        },
+        "teamB": {
+            "name": "RED",
+            "score": 1,
+            "won": false
+        },
+        "game_complete": true,
+        "tie": false
+    },
+    {
+        "id": 17,
+        "team_size": 5,
+        "teamA": {
+            "name": "BLUE TIE",
+            "score": 1,
+            "won": false
+        },
+        "teamB": {
+            "name": "RED TIE",
+            "score": 1,
+            "won": false
+        },
+        "game_complete": true,
+        "tie": true
+    },
+    {
+        "id": 18,
+        "team_size": 5,
+        "teamA": {
+            "name": "XX BLUE TIE",
+            "score": 1,
+            "won": false
+        },
+        "teamB": {
+            "name": "XX RED TIE",
+            "score": 1,
+            "won": false
+        },
+        "game_complete": true,
+        "tie": true
+    },
+    {
+        "id": 19,
+        "team_size": 5,
+        "teamA": {
+            "name": "XX BLUE TIE",
+            "score": 1,
+            "won": false
+        },
+        "teamB": {
+            "name": "XX RED TIE",
+            "score": 4,
+            "won": true
+        },
+        "game_complete": true,
+        "tie": false
+    },
+    {
+        "id": 20,
+        "team_size": 6,
+        "teamA": {
+            "name": "XX BLUE TIE",
+            "score": 1,
+            "won": false
+        },
+        "teamB": {
+            "name": "XX RED TIE",
+            "score": 4,
+            "won": true
+        },
+        "game_complete": true,
+        "tie": false
+    }
+]
