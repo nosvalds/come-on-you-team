@@ -34,8 +34,14 @@ You can view my full design notes [here](./design_notes.md).
 
 ## v3.0
 ### Planned Features/Work
-- [_] Back-end Laravel API to save match history
-- [_] Front-end updates to support GET/POST requests for saving and displaying match history
+- [x] Back-end Laravel API to save match history
+- [_] Front-end updates to support GET/POST/PUT/DELETE requests for saving and displaying match history
+  - [_] React/JSX component to display game history from initial state
+  - [_] Axios set up
+  - [_] GET request for full game history, DELETE to remove a game from the history
+  - [_] React/JSX component to record score
+  - [_] POST request to save a completed game to the DB
+  - [_] PUT request to "save" a match mid-game
 - [_] Adding more visual icons/images for fun
 - [_] Update documentation for how to run this project
 
