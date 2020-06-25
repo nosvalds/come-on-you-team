@@ -10,6 +10,7 @@ import TeamInfo from '../components/TeamInfo';
 import PlayerEntry from '../components/PlayerEntry';
 import TeamSize from '../components/TeamSize';
 import MatchOptions from '../components/MatchOptions';
+import PitchBanner from '../components/PitchBanner';
 
 
 function App({ teamSize }) {
@@ -20,6 +21,7 @@ function App({ teamSize }) {
         <TeamSize initial={ 5 } min={ 3 } max={ 11 } />
         :
         <>
+          <PitchBanner />
           <PlayerEntry />
           <TeamInfo />
           <Pitch />
