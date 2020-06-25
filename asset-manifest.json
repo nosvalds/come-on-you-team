@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/come-on-you-team/static/css/main.d85dd28d.chunk.css",
-    "main.js": "/come-on-you-team/static/js/main.4fd44503.chunk.js",
-    "main.js.map": "/come-on-you-team/static/js/main.4fd44503.chunk.js.map",
+    "main.js": "/come-on-you-team/static/js/main.be6d45cd.chunk.js",
+    "main.js.map": "/come-on-you-team/static/js/main.be6d45cd.chunk.js.map",
     "runtime-main.js": "/come-on-you-team/static/js/runtime-main.c5a4b573.js",
     "runtime-main.js.map": "/come-on-you-team/static/js/runtime-main.c5a4b573.js.map",
     "static/js/2.2a83be3d.chunk.js": "/come-on-you-team/static/js/2.2a83be3d.chunk.js",
     "static/js/2.2a83be3d.chunk.js.map": "/come-on-you-team/static/js/2.2a83be3d.chunk.js.map",
     "index.html": "/come-on-you-team/index.html",
-    "precache-manifest.b70a65e10376285b598161cf242af545.js": "/come-on-you-team/precache-manifest.b70a65e10376285b598161cf242af545.js",
+    "precache-manifest.5f79c467d64a6651637a6e6fac761f12.js": "/come-on-you-team/precache-manifest.5f79c467d64a6651637a6e6fac761f12.js",
     "service-worker.js": "/come-on-you-team/service-worker.js",
     "static/css/main.d85dd28d.chunk.css.map": "/come-on-you-team/static/css/main.d85dd28d.chunk.css.map",
     "static/js/2.2a83be3d.chunk.js.LICENSE.txt": "/come-on-you-team/static/js/2.2a83be3d.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.c5a4b573.js",
     "static/js/2.2a83be3d.chunk.js",
     "static/css/main.d85dd28d.chunk.css",
-    "static/js/main.4fd44503.chunk.js"
+    "static/js/main.be6d45cd.chunk.js"
   ]
 }
