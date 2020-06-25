@@ -6,20 +6,25 @@
 .match-hist-table {
     align-self: center;
     text-align: center;
-    border: 1px var(--dark-green) solid;
     background-color: var(--light-green);
 }
 
-tr:nth-child(odd) {
+tr:nth-child(even) {
     background-color: var(--dark-green);
 }
 
 th {
-    color: var(--text-secondary);
-    background-color: var(--accent);
-    padding: 0.5rem;
+    color: var(--text-primary);
+    background-color: var(--text-secondary);
+    margin: 1rem 0.5rem;
 }
 
 td {
-    padding: 0.25rem 0.5rem;
+    padding: 1rem 0.5rem;
+}
+
+@media (max-width: 500px) {
+    td, th {
+        padding: 1rem 0rem;
+    }
 }

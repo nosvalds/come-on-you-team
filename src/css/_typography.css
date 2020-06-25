@@ -20,12 +20,12 @@ h4 {
     border-radius: 5px;
 }
 
-h5 {
+h5, th {
     font-size: 1.5rem;
     padding: 0.5rem;
 }
 
-button {
+button, .match-id {
     font-family: 'Archivo Black', Helvetica, sans-serif;
     font-size: 1rem;
 }
@@ -40,7 +40,7 @@ footer p {
 }
 
 td button {
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-family: 'Archivo Narrow', Helvetica, sans-serif;
 }
 
@@ -55,4 +55,7 @@ td button {
     h4 {
         font-size: 1rem;
     }
+    /* td {
+        font-size: 0.75rem;
+    } */
 }

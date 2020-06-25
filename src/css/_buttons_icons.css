@@ -40,11 +40,19 @@
     color: var(--text-primary)
 }
 
-td button {
-    border: none;
-    border-radius: 2px;
+td .btn-primary {
+    padding: 0.25rem 0.75rem;
 }
+
 td button:hover {
     background-color: var(--accent);
     cursor: pointer;
+}
+
+.match-id {
+    color: var(--text-secondary);
+    background-color: var(--accent);
+    border-radius: 15px;
+    padding: 0.5rem;
+    margin: 0 1rem;
 }

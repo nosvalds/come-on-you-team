@@ -11,15 +11,18 @@ const MatchHistory = ({ matchHistory }) => {
             <table className="match-hist-table">
                 <thead>
                     <tr>
-                        <th>Match #</th>
-                        <th># Players</th>
                         <th>Team A</th>
                         <th>Score</th>
-                        <th>-</th>
+                        <th></th>
                         <th>Score</th>
                         <th>Team B</th>
-                        <th>Complete</th>
-                        <th>Actions</th>
+                    </tr>
+                    <tr>
+                        <th class="match-id">Match</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
