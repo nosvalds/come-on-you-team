@@ -38,7 +38,7 @@ You can view my full design notes [here](./design_notes.md).
 - [_] Front-end updates to support GET/POST/PUT/DELETE requests for saving and displaying match history
   - [x] React/JSX component to display match history from test data in state
   - [x] React Router set up for navigation between match play and history
-  - [_] Axios set up
+  - [x] Axios set up
   - [_] GET request for full match history, DELETE to remove a match from the history
   - [_] React/JSX component to record score
   - [_] POST request to save a completed match to the DB

@@ -21,6 +21,7 @@ import TeamSize from '../components/TeamSize';
 import MatchOptions from '../components/MatchOptions';
 import PitchBanner from '../components/PitchBanner';
 import MatchHistory from '../components/MatchHistory';
+import Loading from '../components/Loading';
 
 function App({ teamSize }) {
   return (
@@ -43,7 +44,9 @@ function App({ teamSize }) {
               }
             </Route>
             <Route exact path="/match-history" >
-              <MatchHistory />
+              <Loading >
+                <MatchHistory />
+              </Loading>
             </Route>
             <FourOhFour />
           </Switch>

@@ -13,7 +13,8 @@ const initialState = {
         playersFilled: 0,
         players: [],
     },
-    matchHistory, 
+    matchHistory,
+    matchHistoryLoaded: true, 
   };
   
   export default initialState;

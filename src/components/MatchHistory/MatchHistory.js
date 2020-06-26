@@ -10,20 +10,6 @@ const MatchHistory = ({ matchHistory }) => {
             </header>
             <table className="match-hist-table">
                 <thead>
-                    {/* <tr>
-                        <th aria-label="Team A name">Team</th>
-                        <th aria-label="Team A score"></th>
-                        <th></th>
-                        <th aria-label="Team B score"></th>
-                        <th aria-label="Team B name">Team</th>
-                    </tr> */}
-                    {/* <tr>
-                        <th aria-label="match ID">#</th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                    </tr> */}
                 </thead>
                 <tbody>
                     { matchHistory.map((match, i) => (
