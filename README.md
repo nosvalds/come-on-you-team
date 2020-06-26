@@ -41,8 +41,10 @@ You can view my full design notes [here](./design_notes.md).
   - [x] Axios set up
   - [x] GET request for full match history,
   - [x] DELETE request to remove a match from the history table
-  - [_] React/JSX component to record score
-  - [_] POST request to save a completed match to the DB
+  - [x] React/JSX component to record score
+  - [x] POST request to save a completed match to the DB
+    - [_] send user to history instead of Play after saving match
+  - [_] Have API sort matches newest first
   - [_] PUT request to "save" a match mid-match
 - [_] Deployment
   - [_] Back-end on AWS

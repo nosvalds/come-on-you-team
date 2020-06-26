@@ -1,6 +1,6 @@
 import React from "react";
 
-const MatchOptions = ({ teamsFilled, handleReset, handleShuffle }) => (
+const MatchOptions = ({ teamsFilled, handleReset, handleShuffle, handleComplete }) => (
     <section className="match-options-section">
         <button 
             className="btn-primary"
@@ -9,12 +9,20 @@ const MatchOptions = ({ teamsFilled, handleReset, handleShuffle }) => (
             Start Over
         </button>
         { teamsFilled ?
-            <button 
-                className="btn-primary"
-                onClick={ handleShuffle }
-            >
-                Shuffle Teams
-            </button>
+            <>
+                <button 
+                    className="btn-primary"
+                    onClick={ handleComplete }
+                >
+                    Match Complete
+                </button>
+                <button 
+                    className="btn-primary"
+                    onClick={ handleShuffle }
+                >
+                    Shuffle Teams
+                </button>
+            </>
             : null
         }
     </section>
