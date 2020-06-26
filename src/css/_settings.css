@@ -15,8 +15,8 @@
 :root {
     font-size: 16px;
 
-    --text-secondary: #002626;
     --text-primary: #FEFEFE;
+    --background: #002626;
     --banner-back: #0E4749;
     --accent: #D3F6DB;
     --dark-green: #277D0F;

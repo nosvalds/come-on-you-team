@@ -15,7 +15,7 @@ h3 {
 h4 {
     font-size: 2rem;
     background-color: var(--text-primary);
-    color: var(--text-secondary);
+    color: var(--background);
     padding: 0.5rem;
     border-radius: 5px;
 }
@@ -47,6 +47,12 @@ footer p {
 td button, .match-id {
     font-size: 1rem;
     font-family: 'Archivo Narrow', Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-size: 1.5rem;
 }
 
 /* Mobile */

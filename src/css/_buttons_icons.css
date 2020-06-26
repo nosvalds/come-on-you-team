@@ -50,7 +50,7 @@ td button:hover {
 }
 
 .match-id {
-    color: var(--text-secondary);
+    color: var(--background);
     background-color: var(--accent);
     border-radius: 15px;
     padding: 0.5rem;

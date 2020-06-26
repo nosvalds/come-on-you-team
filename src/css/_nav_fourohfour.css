@@ -3,3 +3,22 @@
     padding: 3rem 0;
     background-color: var(--light-green);
 }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--background);
+    border-top: 2px solid var(--accent);
+    border-bottom: 5px solid var(--accent);
+}
+
+nav a {
+    padding: 0.75rem;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+nav a:hover {
+    background-color: var(--dark-green);
+}
