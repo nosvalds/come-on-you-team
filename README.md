@@ -57,7 +57,7 @@ You can view my full design notes [here](./design_notes.md).
 1. Clone the repository to your local machine by running the following commands in your terminal
 ```bash
 git clone git@github.com:nosvalds/come-on-you-team.git {project-directory}
-```
+```ap
 2. In your terminal cd into the project directory and run the below npm command to install neccessary dependency packages
 ```bash
 cd {project-directory}
