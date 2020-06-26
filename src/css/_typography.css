@@ -55,6 +55,11 @@ a {
     font-size: 1.5rem;
 }
 
+.score-input {
+    font-size: 2rem;
+    font-family: 'Archivo Narrow', Helvetica, sans-serif;
+}
+
 /* Mobile */
 @media (max-width: 500px) {
     h3 {

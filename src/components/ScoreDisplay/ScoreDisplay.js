@@ -7,7 +7,6 @@ const ScoreDisplay = ({ team, score, handleChange }) => {
                 htmlFor={`${team}-score`}
                 className="score-label"
             >
-                { team }
             </label>
             <input
                 type="number"
@@ -15,6 +14,7 @@ const ScoreDisplay = ({ team, score, handleChange }) => {
                 className="score-input"
                 value={ score }
                 onChange={ (e) => handleChange(e.currentTarget.value, team) }
+                min="0"
             >
             </input>
         </div>
