@@ -39,7 +39,8 @@ You can view my full design notes [here](./design_notes.md).
   - [x] React/JSX component to display match history from test data in state
   - [x] React Router set up for navigation between match play and history
   - [x] Axios set up
-  - [_] GET request for full match history, DELETE to remove a match from the history
+  - [x] GET request for full match history,
+  - [x] DELETE request to remove a match from the history table
   - [_] React/JSX component to record score
   - [_] POST request to save a completed match to the DB
   - [_] PUT request to "save" a match mid-match

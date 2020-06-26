@@ -46,3 +46,10 @@ export const loadMatchHistory = (data) => {
         matchHistory: data,
     }
 }
+
+export const removeMatch = (id) => {
+    return {
+        type: "REMOVE_MATCH",
+        id,
+    }
+}

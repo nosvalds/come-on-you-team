@@ -1,5 +1,5 @@
 import React from 'react';
-import MatchRow from '../MatchRow/MatchRow'
+import MatchRow from '../MatchRow/'
 import Loading from '../Loading/';
 
 const MatchHistory = ({ matchHistory }) => {

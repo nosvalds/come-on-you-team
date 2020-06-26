@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 import { faMinus } from '@fortawesome/free-solid-svg-icons'
 
-const MatchRow = ({ match }) => {
+const MatchRow = ({ match, handleDelete }) => {
 
     let teamSize = match.team_size;
     return (
@@ -22,7 +22,11 @@ const MatchRow = ({ match }) => {
                 </td>
                 <td></td>
                 <td>
-                    <button className="btn-primary" aria-label="delete game button">
+                    <button 
+                        className="btn-primary" 
+                        aria-label="delete game button"
+                        onClick={ () => handleDelete(match.id) }
+                    >
                         <FontAwesomeIcon icon={ faTrashAlt } />
                     </button>
                 </td>

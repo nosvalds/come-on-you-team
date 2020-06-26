@@ -135,6 +135,14 @@ const loadHistory = (state, { matchHistory }) => {
   }
 }
 
+// remove a single match from the matchHistory
+const removeMatch = (state, { id }) => {
+  return {
+    ...state,
+    matchHistory: state.matchHistory.filter((match) => (match.id !== id)),
+  }
+}
+
 // Reducer function
 const reducer = (state, action) => {
     switch (action.type) {
@@ -144,6 +152,7 @@ const reducer = (state, action) => {
       case "EDIT_TEAM_NAMES": return editTeamNames(state);
       case "SHUFFLE_TEAMS": return shuffleTeams(state);
       case "LOAD_HISTORY": return loadHistory(state, action); // load match history into state
+      case "REMOVE_MATCH": return removeMatch(state, action); // remove a single match history from state
       case "RESET": return {...initialState}; // back to initial state
       default: return state;
     }
