@@ -143,6 +143,17 @@ const removeMatch = (state, { id }) => {
   }
 }
 
+// update score for a team
+const updateScore = (state, {score, team}) => {
+  return {
+    ...state,
+    [team]: {
+      ...state[team], 
+      score, // update score in specific team object, copy everything else
+    }
+  }
+}
+
 // Reducer function
 const reducer = (state, action) => {
     switch (action.type) {
@@ -153,6 +164,7 @@ const reducer = (state, action) => {
       case "SHUFFLE_TEAMS": return shuffleTeams(state);
       case "LOAD_HISTORY": return loadHistory(state, action); // load match history into state
       case "REMOVE_MATCH": return removeMatch(state, action); // remove a single match history from state
+      case "CHANGE_SCORE": return updateScore(state, action); // update score
       case "RESET": return {...initialState}; // back to initial state
       default: return state;
     }

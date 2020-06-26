@@ -2,6 +2,7 @@ import React from 'react';
 
 // Standard Components
 import Pitch from '../Pitch/Pitch';
+import Scores from '../Scores/Scores';
 
 // React-Redux (state/dispatch passed from index.js)
 import TeamInfo from '../TeamInfo';
@@ -18,6 +19,7 @@ const MatchPlay = ({ teamSize }) => {
             <PitchBanner />
             <PlayerEntry />
             <TeamInfo />
+            <Scores />
             <Pitch />
             <MatchOptions />
         </>

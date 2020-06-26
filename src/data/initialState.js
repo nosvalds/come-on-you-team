@@ -8,11 +8,13 @@ const initialState = {
         name: "Team A",
         playersFilled: 0,
         players: [],
+        score: 0,
     },
     teamB: {
         name: "Team B",
         playersFilled: 0,
         players: [],
+        score: 0,
     },
     matchHistory: [],
     matchHistoryLoaded: false, 

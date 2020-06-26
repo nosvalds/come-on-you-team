@@ -53,3 +53,11 @@ export const removeMatch = (id) => {
         id,
     }
 }
+
+export const changeScore = (value, team) => {
+    return {
+        type: "CHANGE_SCORE",
+        score: +value,
+        team,
+    }
+}
