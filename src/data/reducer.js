@@ -131,6 +131,7 @@ const loadHistory = (state, { matchHistory }) => {
   return {
     ...state,
     matchHistory,
+    matchHistoryLoaded: true, // flip to true now that it's loaded into state
   }
 }
 
