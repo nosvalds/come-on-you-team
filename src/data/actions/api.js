@@ -4,7 +4,7 @@ import { loadMatchHistory, removeMatch, resetMatch } from './state';
 export const getMatchHistory = () => {
     return (dispatch) => {
         // now use axios to make an API request
-        axios.get("/").then(({ data }) => {
+        axios.get("").then(({ data }) => {
             dispatch(loadMatchHistory(data.data));
         });
     };
@@ -13,7 +13,7 @@ export const getMatchHistory = () => {
 export const deleteMatch = (id) => {
     return (dispatch) => {
         // use axios to make DELETE request
-        axios.delete(`/${id}`).then(() => {
+        axios.delete(`${id}`).then(() => {
             dispatch(removeMatch(id)); // once this is complete, delete match id from history
         })
     }
@@ -39,7 +39,7 @@ export const postMatch = () => {
         }
 
         // use axios to make a POST request and save the match to the DB, then dispatch a reset for state
-        axios.post("/",data).then(({ data }) => {
+        axios.post("",data).then(({ data }) => {
             dispatch(resetMatch());
         })
     }
