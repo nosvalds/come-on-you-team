@@ -44,7 +44,8 @@ You can view my full design notes [here](./design_notes.md).
   - [_] React/JSX component to record score
   - [_] POST request to save a completed match to the DB
   - [_] PUT request to "save" a match mid-match
-- [_] Adding more visual icons/images for fun
+- [_] Deployment
+  - [_] Back-end on AWS
 - [_] Update documentation for how to run this project
 
 ## Lessons Learned
