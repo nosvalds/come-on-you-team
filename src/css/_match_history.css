@@ -21,6 +21,10 @@ tr:nth-child(4n+2) {
     background-color: var(--dark-green);
 }
 
+tr td:nth-child(1), tr td:nth-child(5) {
+    width: 200px;
+}
+
 th {
     color: var(--text-primary);
     background-color: var(--background);
@@ -40,5 +44,9 @@ td {
 @media (max-width: 500px) {
     td, th {
         padding: 1rem 0rem;
+    }
+
+    tr td:nth-child(1), tr td:nth-child(5) {
+        width: 150px;
     }
 }
