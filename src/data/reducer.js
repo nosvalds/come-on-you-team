@@ -126,6 +126,14 @@ const shuffleTeams = (state) => {
   }
 }
 
+// match history is an array of matches, save it directly into state
+const loadHistory = (state, { matchHistory }) => {
+  return {
+    ...state,
+    matchHistory,
+  }
+}
+
 // Reducer function
 const reducer = (state, action) => {
     switch (action.type) {
@@ -134,6 +142,7 @@ const reducer = (state, action) => {
       case "SET_TEAM_NAMES": return setTeamNames(state, action);
       case "EDIT_TEAM_NAMES": return editTeamNames(state);
       case "SHUFFLE_TEAMS": return shuffleTeams(state);
+      case "LOAD_HISTORY": return loadHistory(state, action); // load match history into state
       case "RESET": return {...initialState}; // back to initial state
       default: return state;
     }

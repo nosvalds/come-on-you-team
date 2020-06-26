@@ -2,6 +2,12 @@ import React, { Component } from "react";
 import loader from '../../img/loader-large.png';
 
 class Loading extends Component {
+    componentDidMount() {
+        if (!this.props.loaded) {
+            this.props.handleLoad();
+        }
+    }
+
     render() {
         const { children, loaded } = this.props;
         return loaded ? children : (

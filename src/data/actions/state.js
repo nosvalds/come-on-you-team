@@ -39,3 +39,10 @@ export const shuffleTeams = () => {
         type: "SHUFFLE_TEAMS",
     }
 }
+
+export const loadMatchHistory = (data) => {
+    return {
+        type: "LOAD_HISTORY",
+        matchHistory: data,
+    }
+}

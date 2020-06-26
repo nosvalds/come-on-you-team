@@ -1,11 +1,17 @@
 import { connect } from 'react-redux';
 import Loading from './Loading';
+import {getMatchHistory} from '../../data/actions/api';
 
-// calculate and pass in whether or not the teams have full rosters of players
 const mapStateToProps = ({ matchHistoryLoaded }) => {
     return {
         loaded: matchHistoryLoaded,
     };
 }
 
-export default connect(mapStateToProps)(Loading);
+const matchDispatchToProps = (dispatch) => {
+    return {
+        handleLoad: dispatch(getMatchHistory()),
+    }
+}
+
+export default connect(mapStateToProps, matchDispatchToProps)(Loading);
