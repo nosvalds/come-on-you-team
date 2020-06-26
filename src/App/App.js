@@ -10,41 +10,22 @@ import {
 // Standard Components
 import Header from '../components/Header/Header';
 import Nav from '../components/Nav/Nav';
-import Pitch from '../components/Pitch/Pitch';
 import Footer from '../components/Footer/Footer';
 import FourOhFour from '../components/FourOhFour/FourOhFour';
 
 // React-Redux (state/dispatch passed from index.js)
-import TeamInfo from '../components/TeamInfo';
-import PlayerEntry from '../components/PlayerEntry';
-import TeamSize from '../components/TeamSize';
-import MatchOptions from '../components/MatchOptions';
-import PitchBanner from '../components/PitchBanner';
 import MatchHistory from '../components/MatchHistory';
+import MatchPlay from '../components/MatchPlay';
 
-function App({ teamSize }) {
+function App() {
   return (
     <main className="main-app">
       <Router>
         <Header />
         <Nav />
           <Switch>
-            <Route exact path="/">
-              { teamSize === 0 ?
-                <TeamSize initial={ 5 } min={ 3 } max={ 11 } />
-                :
-                <>
-                  <PitchBanner />
-                  <PlayerEntry />
-                  <TeamInfo />
-                  <Pitch />
-                  <MatchOptions />
-                </>
-              }
-            </Route>
-            <Route exact path="/match-history" >
-                <MatchHistory />
-            </Route>
+            <Route exact path="/" component={ MatchPlay } />
+            <Route exact path="/match-history" component={ MatchHistory } />
             <FourOhFour />
           </Switch>
         <Footer />
