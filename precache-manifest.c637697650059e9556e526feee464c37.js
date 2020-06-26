@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5aeb1761a60d213a32d18c296d55b6ca",
+    "revision": "dfd205fc03a5b406f99ff8ec7c10f1d8",
     "url": "/come-on-you-team/index.html"
   },
   {
-    "revision": "d7b9f571d62d9aea98d1",
+    "revision": "111dd25136317a7c7dee",
     "url": "/come-on-you-team/static/css/main.5a74ef0b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/come-on-you-team/static/js/2.e1556602.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d7b9f571d62d9aea98d1",
-    "url": "/come-on-you-team/static/js/main.15600d85.chunk.js"
+    "revision": "111dd25136317a7c7dee",
+    "url": "/come-on-you-team/static/js/main.c6e26765.chunk.js"
   },
   {
     "revision": "667ae7d17eaa881e5ee4",
