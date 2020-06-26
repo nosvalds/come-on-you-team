@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/come-on-you-team/precache-manifest.5f79c467d64a6651637a6e6fac761f12.js"
+  "/come-on-you-team/precache-manifest.d11653f82f9d980486bc6aaf3997aa58.js"
 );
 
 self.addEventListener('message', (event) => {
