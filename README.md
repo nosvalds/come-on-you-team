@@ -46,8 +46,8 @@ You can view my full design notes [here](./design_notes.md).
     - [_] send user to history instead of Play after saving match
   - [_] Have API sort matches newest first
   - [_] PUT request to "save" a match mid-match
-- [_] Deployment
-  - [_] Back-end on AWS
+- [x] Deployment
+  - [x] Back-end on Heroku
 - [_] Update documentation for how to run this project
 
 ## Lessons Learned
