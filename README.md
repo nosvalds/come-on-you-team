@@ -37,7 +37,7 @@ You can view my full design notes [here](./design_notes.md).
 - [x] Back-end Laravel API to save match history
 - [_] Front-end updates to support GET/POST/PUT/DELETE requests for saving and displaying match history
   - [x] React/JSX component to display match history from test data in state
-  - [_] React Router set up for navigation
+  - [_] React Router set up for navigation between match play and history
   - [_] Axios set up
   - [_] GET request for full match history, DELETE to remove a match from the history
   - [_] React/JSX component to record score

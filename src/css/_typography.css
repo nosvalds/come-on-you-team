@@ -20,12 +20,17 @@ h4 {
     border-radius: 5px;
 }
 
-h5, th {
+h5 {
     font-size: 1.5rem;
     padding: 0.5rem;
 }
 
-button, .match-id {
+td {
+    font-size: 1.25rem;
+    padding: 0.25rem 0;
+}
+
+button {
     font-family: 'Archivo Black', Helvetica, sans-serif;
     font-size: 1rem;
 }
@@ -39,7 +44,7 @@ footer p {
     color: var(--accent);
 }
 
-td button {
+td button, .match-id {
     font-size: 1rem;
     font-family: 'Archivo Narrow', Helvetica, sans-serif;
 }
@@ -55,7 +60,8 @@ td button {
     h4 {
         font-size: 1rem;
     }
-    /* td {
-        font-size: 0.75rem;
-    } */
+    td {
+        font-size: 1rem;
+        padding: 0.25rem 0;
+    }
 }

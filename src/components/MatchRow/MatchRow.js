@@ -9,32 +9,32 @@ const MatchRow = ({ match }) => {
     return (
         <>
             <tr>
-                <td>{ match.teamA.name }</td>
-                <td>{ match.teamA.score }</td>
-                <td>
-                    <FontAwesomeIcon icon={ faMinus } />
-                </td>
-                <td>{ match.teamB.score }</td>
-                <td>{ match.teamB.name }</td>
-            </tr>
-            <tr>
-                <td>
-                    <span className="match-id">{ match.id }</span> 
+                <td aria-label="match id and team size">
+                    <span className="match-id">Game { match.id }</span> 
                     { `${teamSize} x ${teamSize}` }
                 </td>
                 <td></td>
-                <td></td>
                 <td>
                     { match.game_complete ? 
-                        null 
-                        : <button className="btn-primary">Resume</button>
-                    }
+                            null 
+                            : <button className="btn-primary" aria-label="resume unfinished game button">Resume</button>
+                        }
                 </td>
+                <td></td>
                 <td>
-                    <button className="btn-primary">
+                    <button className="btn-primary" aria-label="delete game button">
                         <FontAwesomeIcon icon={ faTrashAlt } />
                     </button>
                 </td>
+            </tr>
+            <tr>
+                <td aria-label="Team A name">{ match.teamA.name }</td>
+                <td aria-label="Team A score">{ match.teamA.score }</td>
+                <td>
+                    <FontAwesomeIcon icon={ faMinus } />
+                </td>
+                <td aria-label="Team B score">{ match.teamB.score }</td>
+                <td aria-label="Team B name">{ match.teamB.name }</td>
             </tr>
         </>
     )
