@@ -12,6 +12,7 @@ import Header from '../components/Header/Header';
 import Nav from '../components/Nav/Nav';
 import Footer from '../components/Footer/Footer';
 import FourOhFour from '../components/FourOhFour/FourOhFour';
+import Instructions from '../components/Instructions/Instructions';
 
 // React-Redux (state/dispatch passed from index.js)
 import MatchHistory from '../components/MatchHistory';
@@ -23,6 +24,7 @@ function App() {
       <Router>
         <Header />
         <Nav />
+        <Instructions />
           <Switch>
             <Route exact path="/" component={ MatchPlay } />
             <Route exact path="/match-history" component={ MatchHistory } />

@@ -15,10 +15,6 @@ const MatchRow = ({ match, handleDelete }) => {
                 </td>
                 <td></td>
                 <td>
-                    { match.game_complete ? 
-                            null 
-                            : <button className="btn-primary" aria-label="resume unfinished game button">Resume</button>
-                        }
                 </td>
                 <td></td>
                 <td>
