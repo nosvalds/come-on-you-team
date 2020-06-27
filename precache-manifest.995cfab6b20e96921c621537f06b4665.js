@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "43e51ac3abb9dafb4f5898a8607d017a",
+    "revision": "4b5793a3447b18003cf4fbe9e20d2968",
     "url": "/come-on-you-team/index.html"
   },
   {
-    "revision": "fcc96639b72fcd9084cc",
-    "url": "/come-on-you-team/static/css/main.cff04c7b.chunk.css"
+    "revision": "bd83d205c07111404c6a",
+    "url": "/come-on-you-team/static/css/main.a20bf5cb.chunk.css"
   },
   {
     "revision": "a3d061b3240683fe0e9b",
@@ -16,12 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/come-on-you-team/static/js/2.e27ebb03.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fcc96639b72fcd9084cc",
-    "url": "/come-on-you-team/static/js/main.d9eb4e77.chunk.js"
+    "revision": "bd83d205c07111404c6a",
+    "url": "/come-on-you-team/static/js/main.14e9541b.chunk.js"
   },
   {
     "revision": "667ae7d17eaa881e5ee4",
     "url": "/come-on-you-team/static/js/runtime-main.c5a4b573.js"
+  },
+  {
+    "revision": "adf8ea5c6ee479157f008ae9f0f297af",
+    "url": "/come-on-you-team/static/media/field2.adf8ea5c.jpg"
   },
   {
     "revision": "2151e7138c5d31315a804f8a8a58762c",
