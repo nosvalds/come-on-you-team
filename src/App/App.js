@@ -14,7 +14,7 @@ import Footer from '../components/Footer/Footer';
 import FourOhFour from '../components/FourOhFour/FourOhFour';
 import Instructions from '../components/Instructions/Instructions';
 
-// React-Redux (state/dispatch passed from index.js)
+// React-Redux (state and dispatch passed from index.js)
 import MatchHistory from '../components/MatchHistory';
 import MatchPlay from '../components/MatchPlay';
 

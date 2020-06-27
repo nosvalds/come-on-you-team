@@ -1,8 +1,11 @@
 body {
-    background-color: var(--background);
+    /* background-color: var(--background); */
+    background-image: url('../img/field2.jpg');
+    background-size: cover;
 }
 
 .main-app {
+    background-color: var(--background);
     max-width: 1000px;
     margin: 0 auto;
 }

@@ -4,7 +4,7 @@ import { faUsers, faUserPlus, faFutbol } from '@fortawesome/free-solid-svg-icons
 
 const Instructions = () => {
     const [spinBall, setSpinBall] = useState(true);
-    const [showInstructions, setShowInstructions] = useState(false);
+    const [showInstructions, setShowInstructions] = useState(true);
     
     return (
         <section className="instructions-section">
