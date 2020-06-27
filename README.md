@@ -35,7 +35,7 @@ You can view my full design notes [here](./design_notes.md).
 ## v3.0
 ### Planned Features/Work
 - [x] Back-end Laravel API to save match history
-- [_] Front-end updates to support GET/POST/PUT/DELETE requests for saving and displaying match history
+- [x] Front-end updates to support GET/POST/PUT/DELETE requests for saving and displaying match history
   - [x] React/JSX component to display match history from test data in state
   - [x] React Router set up for navigation between match play and history
   - [x] Axios set up
@@ -50,7 +50,12 @@ You can view my full design notes [here](./design_notes.md).
   - [x] Back-end on Heroku
 - [x] Add instructions section on app
 - [x] Have API sort matches newest first
+
+## v3.1
+### Planned work
 - [_] Update documentation for how to run this project
+- [_] Some user experience improvements (field focusing, etc.)
+- [_] Refactor/clean up code, fix/add comments
 
 ## Lessons Learned
 - Planning is critical and thinking ahead for future functionality/releases is important in the design. This can make starting out and getting an MVP running more work that you expect, but will be worth it in the end.
