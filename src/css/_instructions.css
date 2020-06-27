@@ -1,0 +1,44 @@
+.instructions-section {
+    text-align: center;
+    border-bottom: 5px solid var(--accent);
+}
+
+.instructions-header {
+    margin-bottom: 1rem;
+}
+
+.instructions-header h2 {
+    padding: 0.75rem;
+}
+
+.instructions-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.instructions-card {
+    margin-bottom: 1rem;
+}
+
+.instructions-card h4 {
+    margin-bottom: 0.5rem;
+}
+
+.instructions-card p {
+    padding: 0.25rem 0.5rem;
+}
+
+.instructions-section button {
+    margin-bottom: 0.75rem;
+}
+
+/* Collapse to 1 column for smaller screens */
+@media (max-width: 500px) { 
+    .instructions-card-container {
+        grid-template-columns: 1fr;
+    }
+}

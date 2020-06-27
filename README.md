@@ -46,9 +46,11 @@ You can view my full design notes [here](./design_notes.md).
     - [_] send user to history instead of Play after saving match
   - [_] Have API sort matches newest first
   - [_] PUT request to "save" a match mid-match
+    - Abandoning this for now due to lack of time. Since the API doesn't yet save players yet it wouldn't be great functionality to have.
 - [x] Deployment
   - [x] Back-end on Heroku
 - [_] Update documentation for how to run this project
+- [x] Add instructions section on app
 
 ## Lessons Learned
 - Planning is critical and thinking ahead for future functionality/releases is important in the design. This can make starting out and getting an MVP running more work that you expect, but will be worth it in the end.
