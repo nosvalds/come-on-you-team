@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dfd205fc03a5b406f99ff8ec7c10f1d8",
+    "revision": "43e51ac3abb9dafb4f5898a8607d017a",
     "url": "/come-on-you-team/index.html"
   },
   {
-    "revision": "111dd25136317a7c7dee",
-    "url": "/come-on-you-team/static/css/main.5a74ef0b.chunk.css"
+    "revision": "fcc96639b72fcd9084cc",
+    "url": "/come-on-you-team/static/css/main.cff04c7b.chunk.css"
   },
   {
-    "revision": "4d9cacc871ddf89e8aaa",
-    "url": "/come-on-you-team/static/js/2.e1556602.chunk.js"
+    "revision": "a3d061b3240683fe0e9b",
+    "url": "/come-on-you-team/static/js/2.e27ebb03.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/come-on-you-team/static/js/2.e1556602.chunk.js.LICENSE.txt"
+    "url": "/come-on-you-team/static/js/2.e27ebb03.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "111dd25136317a7c7dee",
-    "url": "/come-on-you-team/static/js/main.c6e26765.chunk.js"
+    "revision": "fcc96639b72fcd9084cc",
+    "url": "/come-on-you-team/static/js/main.d9eb4e77.chunk.js"
   },
   {
     "revision": "667ae7d17eaa881e5ee4",
