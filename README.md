@@ -1,6 +1,9 @@
 # Come On You _____ ! 
 - The football team randomizer app
 
+## Backend 
+https://github.com/nosvalds/come-on-you-team-db
+
 ## v1.0
 ### Background
 The initial project brief was to create an app that takes 10 player names and randomly sorts them into two 5-a-side football teams. I set out to create a web app that met these requirements, but looked ahead to future functionality that I wanted to add. 
@@ -31,22 +34,36 @@ You can view my full design notes [here](./design_notes.md).
 
 ## v3.0
 ### Planned Features/Work
-- [_] Back-end Laravel API to save match history
-- [_] Front-end updates to support GET/POST requests for saving and displaying match history
-- [_] Adding more visual icons/images for fun
+- [x] Back-end Laravel API to save match history
+- [_] Front-end updates to support GET/POST/PUT/DELETE requests for saving and displaying match history
+  - [x] React/JSX component to display match history from test data in state
+  - [x] React Router set up for navigation between match play and history
+  - [x] Axios set up
+  - [x] GET request for full match history,
+  - [x] DELETE request to remove a match from the history table
+  - [x] React/JSX component to record score
+  - [x] POST request to save a completed match to the DB
+    - [_] send user to history instead of Play after saving match
+  - [_] PUT request to "save" a match mid-match
+    - Abandoning this for now due to lack of time. Since the API doesn't yet save players yet it wouldn't be great functionality to have.
+- [x] Deployment
+  - [x] Back-end on Heroku
+- [x] Add instructions section on app
+- [x] Have API sort matches newest first
 - [_] Update documentation for how to run this project
 
 ## Lessons Learned
 - Planning is critical and thinking ahead for future functionality/releases is important in the design. This can make starting out and getting an MVP running more work that you expect, but will be worth it in the end.
   - E.g. I'm storing the players names in an array of objects like { name: "Name" }, which represent each player, rather than just an array of player name strings. This will allow me to add more information about the players in the future (age, height, skill, etc.)
-- It's okay to scrap design ideas or architecture you originally thought was going to be neccessary. 
+- It's okay to scrap design ideas or architecture you originally thought was going to be neccessary.
+- Getting feedback from someone not familiar with the app is really useful. I had my girlfriend play and she told me that it wasn't clear on mobile when you should be editing the team names. This pushed me to release v2.1 that clears this up.
 
 ## Running this Project Yourself:
 
 1. Clone the repository to your local machine by running the following commands in your terminal
 ```bash
 git clone git@github.com:nosvalds/come-on-you-team.git {project-directory}
-```
+```ap
 2. In your terminal cd into the project directory and run the below npm command to install neccessary dependency packages
 ```bash
 cd {project-directory}

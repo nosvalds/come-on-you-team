@@ -17,6 +17,9 @@
 @import '_player_team_entry.css';
 @import '_team_info.css';
 @import '_match_options.css';
+@import '_match_history.css';
+@import '_nav_fourohfour.css';
+@import '_instructions.css';
 
 /* layout */
 @import '_layout.css';

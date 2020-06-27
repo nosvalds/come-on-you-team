@@ -39,3 +39,25 @@ export const shuffleTeams = () => {
         type: "SHUFFLE_TEAMS",
     }
 }
+
+export const loadMatchHistory = (data) => {
+    return {
+        type: "LOAD_HISTORY",
+        matchHistory: data,
+    }
+}
+
+export const removeMatch = (id) => {
+    return {
+        type: "REMOVE_MATCH",
+        id,
+    }
+}
+
+export const changeScore = (value, team) => {
+    return {
+        type: "CHANGE_SCORE",
+        score: +value,
+        team,
+    }
+}

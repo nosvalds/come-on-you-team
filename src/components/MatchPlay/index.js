@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import App from './App';
+import MatchPlay from './MatchPlay';
 
 const mapStateToProps = ( { teamSize } ) => {
     return {
@@ -7,4 +7,4 @@ const mapStateToProps = ( { teamSize } ) => {
     }
 }
 
-export default connect(mapStateToProps)(App);
+export default connect(mapStateToProps)(MatchPlay);

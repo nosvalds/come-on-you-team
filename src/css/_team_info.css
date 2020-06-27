@@ -1,4 +1,4 @@
-.team-info, .team-entry-form {
+.team-info, .team-entry-form, .score-section {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -16,6 +16,11 @@
 }
 .form-section input {
     text-align: center;
+}
+
+.score-input {
+    text-align: center;
+    padding: 0;
 }
 
 /* Mobile */

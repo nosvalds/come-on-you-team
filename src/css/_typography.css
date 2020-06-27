@@ -8,6 +8,10 @@ h1 {
     font-size: 4rem;
 }
 
+h2 {
+    font-size: 2.5rem;
+}
+
 h3 {
     font-size: 2.5rem;
 }
@@ -15,7 +19,7 @@ h3 {
 h4 {
     font-size: 2rem;
     background-color: var(--text-primary);
-    color: var(--text-secondary);
+    color: var(--background);
     padding: 0.5rem;
     border-radius: 5px;
 }
@@ -23,6 +27,11 @@ h4 {
 h5 {
     font-size: 1.5rem;
     padding: 0.5rem;
+}
+
+td {
+    font-size: 1.25rem;
+    padding: 0.25rem 0;
 }
 
 button {
@@ -39,6 +48,22 @@ footer p {
     color: var(--accent);
 }
 
+td button, .match-id {
+    font-size: 1rem;
+    font-family: 'Archivo Narrow', Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+}
+
+.score-input {
+    font-size: 2rem;
+    font-family: 'Archivo Narrow', Helvetica, sans-serif;
+}
+
 /* Mobile */
 @media (max-width: 500px) {
     h3 {
@@ -49,5 +74,9 @@ footer p {
     }
     h4 {
         font-size: 1rem;
+    }
+    td {
+        font-size: 1rem;
+        padding: 0.25rem 0;
     }
 }
