@@ -11,7 +11,7 @@ const mapStateToProps = (state) => {
     };
 }
 
-// dispatch the addPlayer action to assign the player to a team
+// dispatch the actions for each of the buttons
 const mapDispatchToProps = (dispatch, state) => {
     return {
         handleReset: () => dispatch(resetMatch()),

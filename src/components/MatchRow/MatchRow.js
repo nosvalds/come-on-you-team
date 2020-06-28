@@ -4,7 +4,6 @@ import { faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 import { faMinus } from '@fortawesome/free-solid-svg-icons'
 
 const MatchRow = ({ match, handleDelete }) => {
-
     let teamSize = match.team_size;
     return (
         <>

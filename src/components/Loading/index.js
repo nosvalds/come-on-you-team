@@ -10,7 +10,8 @@ const mapStateToProps = ({ matchHistoryLoaded }) => {
 
 const matchDispatchToProps = (dispatch) => {
     return {
-        handleLoad: () => dispatch(getMatchHistory()),
+        // dispatch API action to get match history from the database
+        handleLoad: () => dispatch(getMatchHistory()), 
     }
 }
 

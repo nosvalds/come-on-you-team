@@ -1,6 +1,8 @@
 import axios from '../../axios/axios';
 import { loadMatchHistory, removeMatch, resetMatch } from './state';
 
+// api actions
+
 export const getMatchHistory = () => {
     return (dispatch) => {
         // now use axios to make an API request

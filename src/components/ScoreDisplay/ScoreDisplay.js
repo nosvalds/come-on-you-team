@@ -3,10 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { faMinus } from '@fortawesome/free-solid-svg-icons';
 
+// Component displays the team score and allows it to be incremented up (and down) if neccessary
+
 const ScoreDisplay = ({ team, score, handleChange }) => {
     const handleClick = (increment) => {
-        let newScore = score + increment; // calculate the next value
-        if (newScore >= 0) { // check it's within bounds, then call handleChange function to dispatch a change to state with that value, otherwise don't alter state
+        // calculate the next value
+        let newScore = score + increment; 
+        // check it's within bounds, then call handleChange function to dispatch a change to state with that value, otherwise don't alter state
+        if (newScore >= 0) { 
             handleChange(newScore, team);
         } 
     }
@@ -22,7 +26,7 @@ const ScoreDisplay = ({ team, score, handleChange }) => {
                 </button>
                 <h5>{ score }</h5>
                 <button 
-                    onClick={() => handleClick(1)}
+                    onClick={() => handleClick(1)} // pass increment into handleClick
                     className="btn-increment btn-increment-r"
                 >
                     <FontAwesomeIcon icon={ faPlus } />

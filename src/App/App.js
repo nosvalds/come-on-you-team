@@ -1,20 +1,21 @@
 import React from 'react';
 
-// import the ReactRouter components, use HashRouter for github pages deployment
+// import the react-router components, use HashRouter for github pages deployment
 import {
   HashRouter as Router,
   Route,
   Switch,
   } from "react-router-dom";
 
-// Standard Components
+// Standard React Components
 import Header from '../components/Header/Header';
 import Nav from '../components/Nav/Nav';
 import Footer from '../components/Footer/Footer';
 import FourOhFour from '../components/FourOhFour/FourOhFour';
-import Instructions from '../components/Instructions/Instructions';
 
-// React-Redux (state/dispatch passed from index.js)
+
+// React-Redux (state and dispatch passed from index.js)
+import Instructions from '../components/Instructions';
 import MatchHistory from '../components/MatchHistory';
 import MatchPlay from '../components/MatchPlay';
 

@@ -33,13 +33,14 @@ const addPlayer = (state, action) => {
   }
 }
 
-// set the team size and create initial state of position (array of objects)
+// set the team size and create initial state of players array (of objects) with their positions
 const setTeamSize = (state, action) => {
   let players = [];
   let position = "";
   let size = action.teamSize;
-  let numDefenders = Math.floor((size - 1) / 2);
+  let numDefenders = Math.floor((size - 1) / 2); // calculate the number of defenders from team size
 
+  // set the positions
   for (let i = 0; i < size; i += 1) {
     if (i === 0) {
       position = "GK"
@@ -87,7 +88,7 @@ const editTeamNames = (state) => {
   }
 }
 
-// knuth shuffle function
+// knuth shuffle function, randomly shuffles an array efficiently, for use with the Shuffle Teams button
 const knuthShuffle = (array) => {
   for (let i = array.length - 1; i > 0; i -= 1) {
     let rand = Math.floor((i + 1) * Math.random()); //get random between zero and i (inclusive)
@@ -100,12 +101,13 @@ const knuthShuffle = (array) => {
 }
 
 
-// shuffle the teams randomly using knutf shuffle method
+// shuffle the teams randomly using knuth shuffle method
 const shuffleTeams = (state) => {
-  // get teams into one array
+  // get list of players into one array from the 2 teams
   let players = [...state.teamA.players.map((player) => (player.name)), ...state.teamB.players.map((player) => (player.name))];
-  players = knuthShuffle(players); // shuffle
+  players = knuthShuffle(players); // shuffle the array
 
+  // separate the array back into the 2 teams
   let teamAplayers = players.slice(0,(players.length / 2));
   let teamBplayers = players.slice((players.length / 2));
 
@@ -113,15 +115,17 @@ const shuffleTeams = (state) => {
     ...state,
     teamA: {
       ...state.teamA,
+      // update the player names in state after they've been shuffled
       players: state.teamA.players.map((player, i) => 
         ({...player, name: teamAplayers[i]})
-      ), // update the player names after they've been shuffled
+      ), 
     },
     teamB: {
       ...state.teamB,
+      // update the player names in state after they've been shuffled
       players: state.teamB.players.map((player, i) => 
         ({...player, name: teamBplayers[i]})
-      ), // update the player names after they've been shuffled
+      ), 
     }
   }
 }
@@ -135,7 +139,7 @@ const loadHistory = (state, { matchHistory }) => {
   }
 }
 
-// remove a single match from the matchHistory
+// remove a single match from the matchHistory using filter
 const removeMatch = (state, { id }) => {
   return {
     ...state,
@@ -154,9 +158,25 @@ const updateScore = (state, {score, team}) => {
   }
 }
 
+// flip boolean
+const toggleInstructions = (state) => {
+  return {
+    ...state,
+    showInstructions: !state.showInstructions,
+  }
+}
+
+const reset = (state) => {
+  return {
+    ...initialState,
+    showInstructions: state.showInstructions // preserve this user choice
+  }
+}
+
 // Reducer function
 const reducer = (state, action) => {
     switch (action.type) {
+      case "TOGGLE_INSTRUCTIONS": return toggleInstructions(state);
       case "ADD_PLAYER": return addPlayer(state, action); // add player randomly into a position
       case "SET_TEAM_SIZE": return setTeamSize(state, action);
       case "SET_TEAM_NAMES": return setTeamNames(state, action);
@@ -165,7 +185,7 @@ const reducer = (state, action) => {
       case "LOAD_HISTORY": return loadHistory(state, action); // load match history into state
       case "REMOVE_MATCH": return removeMatch(state, action); // remove a single match history from state
       case "CHANGE_SCORE": return updateScore(state, action); // update score
-      case "RESET": return {...initialState}; // back to initial state
+      case "RESET": return reset(state); // back to initial state
       default: return state;
     }
   }

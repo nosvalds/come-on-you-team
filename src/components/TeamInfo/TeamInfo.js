@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 const TeamInfo = ({ edit, handleSubmit, handleClick, initialTeamA, initialTeamB }) => {
+    // track form input state locally in the component
     const [teamA, setTeamA] = useState(initialTeamA);
     const [teamB, setTeamB] = useState(initialTeamB);
 
@@ -14,12 +15,12 @@ const TeamInfo = ({ edit, handleSubmit, handleClick, initialTeamA, initialTeamB 
     }
 
     const formSubmit = (e) => {
-        e.preventDefault();
-        handleSubmit({
+        e.preventDefault(); // prevent default behavior of a page refresh
+        // call the handleSubmit function passed from redux with team names as arguments.
+        handleSubmit({ 
             teamA,
             teamB
         });
-        
     }
 
     return ( 
@@ -84,4 +85,5 @@ const TeamInfo = ({ edit, handleSubmit, handleClick, initialTeamA, initialTeamB 
         </section>
     )
 }
+
 export default TeamInfo;

@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUsers, faUserPlus, faFutbol } from '@fortawesome/free-solid-svg-icons'
 
-const Instructions = () => {
+const Instructions = ({ showInstructions, handleClick }) => {
     const [spinBall, setSpinBall] = useState(true);
-    const [showInstructions, setShowInstructions] = useState(false);
     
     return (
         <section className="instructions-section">
@@ -41,7 +40,7 @@ const Instructions = () => {
                 null
             }
             <button
-                onClick={ () => setShowInstructions(!showInstructions) }
+                onClick={ () => handleClick() }
             >
                 { showInstructions ? "Hide Instructions" : "Show Instructions" }
             </button>
