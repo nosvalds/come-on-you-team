@@ -9,7 +9,7 @@ const MatchRow = ({ match, handleDelete }) => {
         <>
             <tr>
                 <td aria-label="match id and team size">
-                    <span className="match-id">Game { match.id }</span> 
+                    <span className="match-id">Match { match.id }</span> 
                     { `${teamSize} x ${teamSize}` }
                 </td>
                 <td></td>
