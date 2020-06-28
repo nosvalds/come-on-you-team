@@ -40,6 +40,7 @@ export const shuffleTeams = () => {
     }
 }
 
+// pass data in as matchHistory
 export const loadMatchHistory = (data) => {
     return {
         type: "LOAD_HISTORY",
@@ -57,7 +58,7 @@ export const removeMatch = (id) => {
 export const changeScore = (value, team) => {
     return {
         type: "CHANGE_SCORE",
-        score: +value,
+        score: +value, // make sure this is passed in as a number
         team,
     }
 }

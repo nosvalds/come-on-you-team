@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import MatchHistory from './MatchHistory';
 
-// calculate and pass in whether or not the teams have full rosters of players
+// pass in the match history from state
 const mapStateToProps = ({ matchHistory }) => {
     return {
         matchHistory

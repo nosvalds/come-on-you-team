@@ -58,7 +58,7 @@ You can view my full design notes [here](./design_notes.md).
 
 ## v3.1
 ### Planned work
-- [_] Update documentation for how to run this project
+- [x] Update documentation for how to run this project
 - [_] Some user experience improvements (field focusing, etc.)
 - [_] Refactor/clean up code, fix/add comments
 

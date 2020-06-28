@@ -1,13 +1,13 @@
 import React from 'react';
 
-// import the ReactRouter components, use HashRouter for github pages deployment
+// import the react-router components, use HashRouter for github pages deployment
 import {
   HashRouter as Router,
   Route,
   Switch,
   } from "react-router-dom";
 
-// Standard Components
+// Standard React Components
 import Header from '../components/Header/Header';
 import Nav from '../components/Nav/Nav';
 import Footer from '../components/Footer/Footer';

@@ -2,7 +2,7 @@ import React from 'react';
 import PitchSection from '../PitchSection';
 
 const Pitch = () => {
-    let positions = ["GK", "D", "F"]; // could have this in state and allow modification for future functionality
+    let positions = ["GK", "D", "F"]; // could have this in state and allow modification for future functionality (adding Midfield for example)
 
     return (
         <section className="pitch-container-background">

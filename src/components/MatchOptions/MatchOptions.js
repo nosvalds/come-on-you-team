@@ -8,6 +8,7 @@ const MatchOptions = ({ teamsFilled, handleReset, handleShuffle, handleComplete 
         >
             Start Over
         </button>
+        {/* Only show these buttons once the teams are filled with players */}
         { teamsFilled ?
             <>
                 <button 

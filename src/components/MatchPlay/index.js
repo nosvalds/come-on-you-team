@@ -1,7 +1,8 @@
 import { connect } from 'react-redux';
 import MatchPlay from './MatchPlay';
 
-const mapStateToProps = ( { teamSize } ) => {
+const mapStateToProps = ({ teamSize }) => {
+    // pass teamSize from state into MatchPlay
     return {
         teamSize
     }
