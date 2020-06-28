@@ -1,25 +1,30 @@
 # Come On You _____ ! 
-- The football team randomizer app
+[Come On You __ !](https://nosvalds.github.io/come-on-you-team/#/) 
+- The football team randomizer and score keeping web app
 
-## Backend 
+## Frontend GitHub
+https://github.com/nosvalds/come-on-you-team
+
+## Backend/API GitHub
 https://github.com/nosvalds/come-on-you-team-db
 
+# Version History
 ## v1.0
 ### Background
-The initial project brief was to create an app that takes 10 player names and randomly sorts them into two 5-a-side football teams. I set out to create a web app that met these requirements, but looked ahead to future functionality that I wanted to add. 
+The initial project brief was to create an app that takes 10 player names and randomly sorts them into two 5-a-side football teams. I set out to create a web app that met these base requirements, but looked ahead to future functionality that I wanted to add. 
 
 ### Plan
 I spent most of the first morning putting the ideas that had popped into my head over the weekend into notes and on paper in a wireframe. I wanted the players to be laid out on the screen with a football pitch background as I thought this would be a nice visual representation and would potentially give me the option of adding "formations" to further releases. 
 
 As I was planning I split out the Minimum Viable Product (MVP) and "stretch" feature ideas. While I was designing the MVP, I tried to keep and eye out for places in the design and code that I could make things easily changeable and expandable for the future features. 
 
-As for technologies I decided to start with a React/Redux web application. I understood this was likely overkill for the MVP, but with my stretch goals would become more neccessary for the interactivity that I desired. Also looking through previous project examples I saw they were able to achieve good functionality with these technologies. I also penciled in the thought of creating a back end Laravel API to keep track of match scores over time. 
+As for technologies I decided to start with a React/Redux web application. I understood this was likely overkill for the MVP, but with my stretch goals would become more neccessary for the interactivity that I desired. Also looking through previous students project examples I saw they were able to achieve good functionality with these technologies. I also penciled in the thought of creating a back end Laravel API to keep track of match scores over time. 
 
 You can view my full design notes [here](./design_notes.md).
 
 ## v2.0
 ### Features
-- [x] Pick # of Teams per side
+- [x] Pick # of players per side
 - [x] Ability to change team names
 - [x] Update game flow due to above changes
 - [x] Start Over and Shuffle buttons
@@ -45,9 +50,9 @@ You can view my full design notes [here](./design_notes.md).
   - [x] POST request to save a completed match to the DB
     - [_] send user to history instead of Play after saving match
   - [_] PUT request to "save" a match mid-match
-    - Abandoning this for now due to lack of time. Since the API doesn't yet save players yet it wouldn't be great functionality to have.
+    - Abandoning this for now due to lack of time. Since the backend doesn't keep track of players yet it wouldn't be great functionality to have.
 - [x] Deployment
-  - [x] Back-end on Heroku
+  - [x] Laravel API Back-end on Heroku
 - [x] Add instructions section on app
 - [x] Have API sort matches newest first
 
@@ -65,16 +70,16 @@ You can view my full design notes [here](./design_notes.md).
 
 ## Running this Project Yourself:
 
-1. Clone the repository to your local machine by running the following commands in your terminal
+1. Clone the git repository to your local machine by running the following commands in your terminal. Or copy the project folder from google drive to your local machine.
 ```bash
 git clone git@github.com:nosvalds/come-on-you-team.git {project-directory}
-```ap
+```
 2. In your terminal cd into the project directory and run the below npm command to install neccessary dependency packages
 ```bash
 cd {project-directory}
 npm install
 ```
-3. In your terminal run a local development server to view on your local machine
+3. In your terminal run the local development server provided by create-react-app to view on your local machine
 ```bash
 npm start
 ```
@@ -87,11 +92,19 @@ You can now view come-on-you-team in the browser.
 
   Local:            http://localhost:3000/come-on-you-team
   On Your Network:  http://192.168.0.96:3000/come-on-you-team
-
-Note that the development build is not optimized.
-To create a production build, use npm run build.
 ```
 5. Navigate to the "Local" URL from above in your favourite browser
+
+## Directory Structure
+### ```/src```
+Source directory where all changes are made.
+- ```/App/``` - contains the main React App. Header/Footer, different components and the routing.
+- ```/axios/``` - contains axios set up to make AJAX requests to the Laravel API. Endpoints for the API are defined here
+- ```/components/``` - contains all the React components that make up the App
+- ```/css/``` - CSS files
+- ```/data/``` - contains the Redux set up to handle state management
+- ```/img/``` - images
+- ```index.js``` - top level of the React application. Contains Redux set up and CSS import
 
 ## Deploying to gitHub Pages
 If you'd like to deploy this page from your own gitHub repository you can follow the below steps:
