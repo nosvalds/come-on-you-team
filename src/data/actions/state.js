@@ -62,3 +62,9 @@ export const changeScore = (value, team) => {
         team,
     }
 }
+
+export const toggleInstructions = () => {
+    return {
+        type: "TOGGLE_INSTRUCTIONS",
+    }
+}

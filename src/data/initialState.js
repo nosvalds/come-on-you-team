@@ -4,6 +4,7 @@
 const initialState = {
     teamSize: 0,
     editTeamName: true,
+    showInstructions: true,
     teamA: {
         name: "Team A",
         playersFilled: 0,

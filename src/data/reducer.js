@@ -158,9 +158,25 @@ const updateScore = (state, {score, team}) => {
   }
 }
 
+// flip boolean
+const toggleInstructions = (state) => {
+  return {
+    ...state,
+    showInstructions: !state.showInstructions,
+  }
+}
+
+const reset = (state) => {
+  return {
+    ...initialState,
+    showInstructions: state.showInstructions // preserve this user choice
+  }
+}
+
 // Reducer function
 const reducer = (state, action) => {
     switch (action.type) {
+      case "TOGGLE_INSTRUCTIONS": return toggleInstructions(state);
       case "ADD_PLAYER": return addPlayer(state, action); // add player randomly into a position
       case "SET_TEAM_SIZE": return setTeamSize(state, action);
       case "SET_TEAM_NAMES": return setTeamNames(state, action);
@@ -169,7 +185,7 @@ const reducer = (state, action) => {
       case "LOAD_HISTORY": return loadHistory(state, action); // load match history into state
       case "REMOVE_MATCH": return removeMatch(state, action); // remove a single match history from state
       case "CHANGE_SCORE": return updateScore(state, action); // update score
-      case "RESET": return {...initialState}; // back to initial state
+      case "RESET": return reset(state); // back to initial state
       default: return state;
     }
   }

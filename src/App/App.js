@@ -12,9 +12,10 @@ import Header from '../components/Header/Header';
 import Nav from '../components/Nav/Nav';
 import Footer from '../components/Footer/Footer';
 import FourOhFour from '../components/FourOhFour/FourOhFour';
-import Instructions from '../components/Instructions/Instructions';
+
 
 // React-Redux (state and dispatch passed from index.js)
+import Instructions from '../components/Instructions';
 import MatchHistory from '../components/MatchHistory';
 import MatchPlay from '../components/MatchPlay';
 
