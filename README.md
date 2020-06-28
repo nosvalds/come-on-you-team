@@ -59,8 +59,10 @@ You can view my full design notes [here](./design_notes.md).
 ## v3.1
 ### Planned work
 - [x] Update documentation for how to run this project
-- [_] Some user experience improvements (field focusing, etc.)
-- [_] Refactor/clean up code, fix/add comments
+- [x] Some user experience improvements
+  - [x] Set up local storage, so that user does not lose their place on browser refresh. Long term data is still stored in the API backend.
+  - [x] Lifted the showInstructions state to the app level so that could persist on refresh
+- [x] Refactor/clean up code, fix/add comments
 
 ## Lessons Learned
 - Planning is critical and thinking ahead for future functionality/releases is important in the design. This can make starting out and getting an MVP running more work that you expect, but will be worth it in the end.
