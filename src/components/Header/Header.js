@@ -16,6 +16,8 @@ const Header = () => {
                     (<span className="accent-color">COY__!</span>)
                 }
             </h1>
+            <p>Come On You __! allows you to enter players names and randomly select teams for your pick-up football matches.</p>
+            <p>You can also set team names and save match results.</p>
         </header>
     )
 }

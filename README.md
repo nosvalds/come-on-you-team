@@ -70,6 +70,13 @@ You can view my full design notes [here](./design_notes.md).
 - It's okay to scrap design ideas or architecture you originally thought was going to be neccessary.
 - Getting feedback from someone not familiar with the app is really useful. I had my girlfriend play and she told me that it wasn't clear on mobile when you should be editing the team names. This pushed me to release v2.1 that clears this up.
 
+## v3.2
+### ChangeLog
+- [x] Remove distracting spinning ball animation
+- [ ] Add short description of the application in the header
+- [ ] Make the instructions more readable
+- [ ] Show "Match History" by default
+
 ## Running this Project Yourself:
 
 1. Clone the git repository to your local machine by running the following commands in your terminal. Or copy the project folder from google drive to your local machine.
