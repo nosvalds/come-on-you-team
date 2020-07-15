@@ -53,6 +53,13 @@ td button, .match-id {
     font-family: 'Archivo Narrow', Helvetica, sans-serif;
 }
 
+p {
+    font-size: 1rem;
+    line-height: 1.7;
+    font-weight: 300;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
 a {
     text-decoration: none;
     color: var(--text-primary);

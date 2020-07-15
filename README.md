@@ -73,8 +73,8 @@ You can view my full design notes [here](./design_notes.md).
 ## v3.2
 ### ChangeLog
 - [x] Remove distracting spinning ball animation
-- [ ] Add short description of the application in the header
-- [ ] Make the instructions more readable
+- [x] Add short description of the application in the header
+- [x] Make the instructions more readable
 - [ ] Show "Match History" by default
 
 ## Running this Project Yourself:
