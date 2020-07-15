@@ -63,7 +63,3 @@ td button:hover {
     color: var(--text-primary);
     margin-bottom: 1rem;
 }
-
-.ball:hover {
-    cursor: pointer;
-}
