@@ -34,7 +34,7 @@
 }
 
 .instructions-section button {
-    margin-bottom: 0.75rem;
+    margin: 0.75rem 0rem;
 }
 
 /* Collapse to 1 column for smaller screens */

@@ -5,13 +5,13 @@ const Nav = () => {
         <nav>
             <a 
                 className="nav-left-tab" 
-                href="#/"
+                href="#/play"
             >
                 Play
             </a>
             <a 
                 className="nav-right-tab" 
-                href="#/match-history"
+                href="#/"
             >
                 Match History
             </a>

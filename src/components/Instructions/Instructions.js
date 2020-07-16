@@ -14,7 +14,7 @@ const Instructions = ({ showInstructions, handleClick }) => (
                     <div className="instructions-card">
                         <FontAwesomeIcon icon={ faUserPlus } className="instructions-icon" size="lg"/>
                         <h5>Player entry</h5>
-                        <p>Select the number of players per side you would like. Then enter the players names. They will be added randomly to the pitch.</p>
+                        <p>Select the number of players per side then enter the players names. They will be added randomly to the pitch.</p>
                         <p>Once complete you have the option of shuffling the teams by clicking the "shuffle teams" button below the pitch.</p>
                     </div>
                     <div className="instructions-card">
@@ -30,7 +30,7 @@ const Instructions = ({ showInstructions, handleClick }) => (
                         />
                         <h5>Score and save</h5>
                         <p>Update scores with the counters underneath the team names as you go or after the match.</p>
-                        <p>Once the match is over press the "Match Complete" button to save the match format and score. View results of previous matches on the "Match History" tab.</p>
+                        <p>Once the match is over press the "Match Complete" button to save the match format and score. View results of previous matches in the "Match History" section.</p>
                     </div>
                 </div>
             </>

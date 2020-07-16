@@ -27,8 +27,8 @@ function App() {
         <Nav />
         <Instructions />
           <Switch>
-            <Route exact path="/" component={ MatchPlay } />
-            <Route exact path="/match-history" component={ MatchHistory } />
+            <Route exact path="/" component={ MatchHistory } />
+            <Route exact path="/play" component={ MatchPlay } />
             <FourOhFour />
           </Switch>
         <Footer />
