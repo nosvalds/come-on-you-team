@@ -169,7 +169,7 @@ const toggleInstructions = (state) => {
 const reset = (state) => {
   return {
     ...initialState,
-    showInstructions: state.showInstructions // preserve this user choice
+    showInstructions: state.showInstructions, // preserve this user choice
   }
 }
 

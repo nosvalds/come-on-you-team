@@ -41,7 +41,7 @@ export const postMatch = () => {
         }
 
         // use axios to make a POST request and save the match to the DB, then dispatch a reset for state
-        axios.post("",data).then(({ data }) => {
+        axios.post("",data).then(() => {
             dispatch(resetMatch());
         })
     }
