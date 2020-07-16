@@ -75,7 +75,7 @@ You can view my full design notes [here](./design_notes.md).
 - [x] Remove distracting spinning ball animation
 - [x] Add short description of the application in the header
 - [x] Make the instructions more readable
-- [ ] Show "Match History" by default
+- [x] Show "Match History" by default
 
 ## Running this Project Yourself:
 
