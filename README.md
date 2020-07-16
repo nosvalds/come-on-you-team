@@ -72,6 +72,11 @@ You can view my full design notes [here](./design_notes.md).
 
 ## v3.2
 ### ChangeLog
+- Fixed CORS issues
+- Final release for Developme_ technical challenge deadline
+
+## v3.3
+### ChangeLog
 - [x] Remove distracting spinning ball animation
 - [x] Add short description of the application in the header
 - [x] Make the instructions more readable
