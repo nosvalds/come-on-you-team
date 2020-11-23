@@ -138,6 +138,11 @@ react-scripts build
 gh-pages -d build
 ```
 
+## Deploying to Kualo
+- It's weird. deploy.js doesn't work even though it says it does
+- I was able to clone the repo copy over the build directory, commit, and then push. The git setup is kinda screwy. 
+- Maybe I can just write a script to do that work instead of using gh-pages plugin
+
 # Create React App documentation
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Available Scripts
