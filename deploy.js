@@ -5,7 +5,7 @@ const ghpages = require('gh-pages');
  */
 ghpages.publish('build', {
     branch: 'main',
-    repo: 'ssh://nikolaso@nikolaso.com:22007/home/nikolaso/come-on-you.nikolaso.com'
+    repo: ''
   }, (err) => {
       if (err) {
         console.log("Error deploying to nikolaso.com" + err)
